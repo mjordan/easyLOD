@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<title><?php echo $metadata['title']; ?></title>
+<style>
+  body{ font-family: sans-serif; }
+</style>
+</head>
+<body>
+<h1><?php echo $metadata['title']; ?></h1>
+<?php foreach ( $metadata as $field => $value ): ?>
+<p><strong><?php echo $field; ?></strong>: <?php echo $value; ?></p>
+<?php endforeach; ?>
+
+</body>
+</html>
