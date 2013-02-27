@@ -10,9 +10,10 @@ easyLOD's goal is to make it as simple to publish Linked Data while incorporatin
 * Content negotiation to accomodate both Linked Data browsers and ordinary browsers.
 * Written in Slim, a PHP micro-framework (included in the easyLOD distribution). 
 * Plugins for data sources are easy to write (more info is provided below).
-* URIs use 'namespaces' to identify data sources, so when data source back end changes, URIs don't need to (more info is provided below).
+* Gets data from sources in realtime, not by writing out different representations to files.
+* Resource URIs use 'namespaces' to identify data sources, so when data source back end changes, URIs don't need to (more info is provided below).
 
-## Resource identifiers
+## Resource URIs
 
 Everything on the Web of Data a must have a unique URI. HTTP URIs have a server name and a path, and within a given server name, the unique parts of the URI are expressed in its path. If organizations assign unique identifiers to the things it describes, these identifers can be used as the unique parts of URIs.
 
