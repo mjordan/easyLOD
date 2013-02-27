@@ -32,14 +32,14 @@ Three plugins are provided with easyLOD, one to get Dublin Core data from CONTEN
 
 Unzip the distribution, put it somewhere in your web server's document root, and then use the following command to test the FOAF plugin (this command assumes you are issuing it on the same server where you installed easyLOD):
 
-'curl -L -H 'Accept: application/rdf+xml' http://localhost/easyLOD/resource/foaf:random@modnar44.com
+`curl -L -H 'Accept: application/rdf+xml' http://localhost/easyLOD/resource/foaf:random@modnar44.com`
 
 You should see the following:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:foaf="http://xmlns.com/foaf/0.1/">
- <rdf:Description rdf:about="http://thinkpad/easyLOD/resource/foaf:random@modnar44.com">
+ <rdf:Description rdf:about="http://localhost/easyLOD/resource/foaf:random@modnar44.com">
   <foaf:mbox>random@modnar44.com</foaf:mbox>
   <foaf:surname>Jalfrezi</foaf:surname>
   <foaf:givenName>Large</foaf:givenName>
