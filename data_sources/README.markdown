@@ -19,5 +19,5 @@ All plugins must contain the following functions:
 * getWebPage()
 * getResourceData()
 
-Documentation on these functions is available in the CSV plugin.
+Documentation on these functions is available in the sample plugins.
 
