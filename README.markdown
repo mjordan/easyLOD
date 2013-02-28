@@ -17,15 +17,15 @@ easyLOD's goal is to make it as simple to publish Linked Data while incorporatin
 
 Everything on the Web of Data must have a unique URI. HTTP URIs have a server name and a path, and within a given server name, the unique parts of the URI are expressed in its path. If organizations assign unique identifiers to the things it describes, these identifers can be used as the unique parts of URIs.
 
-easyLOD imposes a specific pattern for URIs, namely, a string (the 'namespace'), then a color (':'), then a unique ID. For example, a URI managed by easyLOD looks like this:
+easyLOD imposes a specific pattern for URIs, namely, a string (the 'namespace'), then a colon (':'), then an ID. The combination of namespace and ID must be unique. For example, a URI managed by easyLOD looks like this:
 
-http://myorg.edu/pathtoeasylod/namespace1:foo
+http://myorg.edu/pathtoeasylod/namespace3:foo
 
-The unique ID (in the case of the example above, 'foo') can be any string of characters that are valid in URIs. easyLOD doesn't assing the IDs -- that's up to you. The namespace (in this case, 'namespace1') maps to a data source, which will have its own plugin. The unique combination of namespace and ID tell easyLOD which data source plugin to use, and then which item managed by that plugin the request is for.
+The ID (in the case of the example above, 'foo') can be any string of characters that are valid in URIs. easyLOD doesn't assing the IDs -- that's up to you. The namespace (in this case, 'namespace3') maps to a data source plugin. The unique combination of namespace and ID tell easyLOD which data source plugin to use, and then which item managed by that plugin the request is for.
 
 ## Data source plugins
 
-easyLOD uses plugins to retrieve data, which it then wraps in RDF/XML to send to the Linked Data browser. If the browser making the request is not a Linked Data browser (i.e., probably a human using Chrome, Firefox, etc.), the data is wrapped in HTML and sent to the browser.
+easyLOD uses plugins to retrieve data, which it then wraps in RDF/XML to send to the Linked Data browser. If the browser making the request is not a Linked Data browser (i.e., probably a human using Chrome, Firefox, etc.), the data is wrapped in HTML and sent to the browser. Plugins can also redirect users to external websites that describe the item corresponding to the identifier.
 
 Four plugins are provided with easyLOD: 
 
