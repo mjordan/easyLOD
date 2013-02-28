@@ -44,6 +44,8 @@ function getWebPage($identifier, $app) {
 }
 
 /**
+ * Required function.
+ *
  * Generate the RDF XML for the item.
  */ 
 function getResourceData($identifier, $xml, $app) {

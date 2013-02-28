@@ -44,7 +44,10 @@ function getWebPage($identifier, $app) {
 }
 
 /**
- * Retrieve the MODS XML for the item and then wrap it in <RDF> tags.
+ * Required function.
+ *
+ * Retrieve the MODS XML for the item and insert it into the 
+ * RDF XML.
  */ 
 function getResourceData($identifier, $xml, $app) {
   list($namespace, $fedora_ns, $fedora_autoincrement) = explode(':', $identifier);

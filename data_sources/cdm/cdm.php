@@ -49,7 +49,10 @@ function getWebPage($identifier, $app) {
 }
 
 /**
- * Gets the item's info using the CONTENTdm web API. 
+ * Required function.
+ *
+ * Gets the item's info using the CONTENTdm web API
+ * and convert it to Dublin Core XML.
  */ 
 function getResourceData($identifier, $xml, $app) {
   $config = dataSourceConfig();
