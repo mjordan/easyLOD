@@ -1,8 +1,8 @@
 <?php
 
 /**
- * Simple data source plugin for easyLOD that generates XML for an item in a MySQL
- * database. This is the data that was imported into the database:
+ * Data source plugin for easyLOD that generates XML for an item in
+ * a MySQL database. The database has one table:
  *
  * +----+------------+--------------------------------------+----------------------+------+
  * | id | identifier | title                                | description          | date |
@@ -22,7 +22,7 @@ function dataSourceConfig() {
   return array(
     // Should be outside the webroot and readable by the web server.
     'config_file' => '/path/to/db_config.php'
-    );
+  );
 }
 
 /**
@@ -57,6 +57,7 @@ function getWebPage($identifier, $app) {
 function getResourceData($identifier, $xml, $app) {
   list($namespace, $id) = explode(':', $identifier);
   if ($record = getRecord($id)) {
+    // Wrap each of the record's values in dc: namespaced XML elements.
     foreach ($record as $field => $value) {
       $xml->writeElementNS('dc', strtolower($field), NULL, $value);
     }
@@ -78,14 +79,16 @@ function getRecord($id) {
   require $config['config_file'];
 
   $dbh = new PDO('mysql:host=localhost;dbname=' . $database, $username, $password);
-  $stmt = $dbh->prepare("SELECT * FROM data WHERE identifier = ?");
-  $stmt->execute(array($id));
-  $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
-  // We don't want the 'id' field in the output, since it's just the database table key.
+  $query = $dbh->prepare("SELECT * FROM data WHERE identifier = ?");
+  $query->execute(array($id));
+  $rows = $query->fetchAll(PDO::FETCH_ASSOC);
+
   if (count($rows)) {
+    // We don't want the record's 'id' field in the output, since it's just the 
+    // database table key.
     unset($rows[0]['id']);
-    // Since the same author wrote all the books in our database, we can add this
-    // info here. Just for fun.
+    // An extra trick: since the same author wrote all the books in our database, 
+    // we can add this info here before returning the record. 
     $rows[0]['Author'] = 'Dick, Philip K.';
     return $rows[0];
   }

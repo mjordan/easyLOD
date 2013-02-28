@@ -7,15 +7,15 @@ easyLOD's goal is to make it as simple to publish Linked Data while incorporatin
 ## Features
 
 * No dependencies other than PHP 5.3 or higher.
-* Content negotiation to accomodate both Linked Data browsers and ordinary browsers.
 * Written in Slim, a PHP micro-framework (included in the easyLOD distribution). 
+* Performs content negotiation to allow Linked Data browsers to request RDF-encoded data.
 * Plugins for data sources are easy to write (more info is provided below).
-* Gets data from sources in realtime, not by writing out different representations to files.
+* Gets data from sources in realtime, not by writing out representations to files.
 * Resource URIs use 'namespaces' to identify data sources, so when data source back end changes, URIs don't need to (more info is provided below).
 
 ## Resource URIs
 
-Everything on the Web of Data a must have a unique URI. HTTP URIs have a server name and a path, and within a given server name, the unique parts of the URI are expressed in its path. If organizations assign unique identifiers to the things it describes, these identifers can be used as the unique parts of URIs.
+Everything on the Web of Data must have a unique URI. HTTP URIs have a server name and a path, and within a given server name, the unique parts of the URI are expressed in its path. If organizations assign unique identifiers to the things it describes, these identifers can be used as the unique parts of URIs.
 
 easyLOD imposes a specific pattern for URIs, namely, a string (the 'namespace'), then a color (':'), then a unique ID. For example, a URI managed by easyLOD looks like this:
 
@@ -27,7 +27,14 @@ The unique ID (in the case of the example above, 'foo') can be any string of cha
 
 easyLOD uses plugins to retrieve data, which it then wraps in RDF/XML to send to the Linked Data browser. If the browser making the request is not a Linked Data browser (i.e., probably a human using Chrome, Firefox, etc.), the data is wrapped in HTML and sent to the browser.
 
-Three plugins are provided with easyLOD, one to get Dublin Core data from CONTENTdm (which has a web-services API), one to get FOAF (http://xmlns.com/foaf/spec/) data from a small CSV file, and one to get simple data describing books written by Philip K. Dick from a MySQL database. All are in the 'data_sources' directory in the easyLOD distribution.
+Four plugins are provided with easyLOD: 
+
+* a plugin that retrieves Dublin Core metadata from CONTENTdm (which provides a web-services API)
+* a plugin that retrieves MODS descriptions for items in an Islandora repository
+* a plugin that gets FOAF (http://xmlns.com/foaf/spec/) data from a small CSV file (included in the plugin directory)
+* a plugin that retrieves Dublin Core metadata describing books from a MySQL database (SQL file is included in the plugin directory)
+
+These are intended to illustrate how information can be retieved from different data sources. 
 
 ## Installation and testing
 
