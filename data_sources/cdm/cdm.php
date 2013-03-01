@@ -31,7 +31,7 @@ function dataSourceConfig() {
  * plugin belong to.
  */
 function getDataSourceNamespaces() {
-  return array('xmlns:dc' => 'http://purl.org/dc/terms/');
+  return array('xmlns:dcterms' => 'http://purl.org/dc/terms/');
 }
 
 /**
