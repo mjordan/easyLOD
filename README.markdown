@@ -29,9 +29,9 @@ easyLOD uses plugins to retrieve data, which it then wraps in RDF/XML to send to
 
 Four plugins are provided with easyLOD: 
 
-* a plugin that retrieves Dublin Core metadata from CONTENTdm (which provides a web-services API)
-* a plugin that retrieves MODS descriptions for items in an Islandora repository
-* a plugin that gets FOAF (http://xmlns.com/foaf/spec/) data from a small CSV file (included in the plugin directory)
+* a plugin that retrieves Dublin Core metadata from CONTENTdm (http://contentdm.org/), which provides a web-services API
+* a plugin that retrieves MODS descriptions for items in an Islandora (http://islandora.ca/) repository
+* a plugin that gets FOAF data from a small CSV file (included in the plugin directory)
 * a plugin that retrieves Dublin Core metadata describing books from a MySQL database (SQL file is included in the plugin directory)
 
 These are intended to illustrate how information can be retieved from different data sources. 
