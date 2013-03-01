@@ -76,8 +76,8 @@ The two different responses to the same URI illustrate the Linked Data concept o
 easyLOD does not provide a mechanism for querying the Linked Data it exposes. Many Linked Data providers supply a SPARQL endpoint to allow queries. One strategy for providing a SPARQL endpoint for easyLOD would be to:
 
 1) Configure easyLOD to expose data using a plugin.
-1) Write a script to iterate through all of the identifiers in your data and send corresponding queries to their easyLOD resource URLs.
-1) Have the script write out the RDF/XML representations of your resources as static files.
-1) Install and configure the Mulgara RDF Database (http://www.mulgara.org/) or some other RDF triple store that provides its own SPARQL endpoint.
-1) Load your data as RDF triples.
-1) Expose the databases's SPARQL endpoint for Linked Data applications to query.
+2) Write a script to iterate through all of the identifiers in your data and send corresponding queries to their easyLOD resource URLs.
+3) Have the script write out the RDF/XML representations of your resources as static files.
+4) Install and configure the Mulgara RDF Database (http://www.mulgara.org/) or some other RDF triple store that provides its own SPARQL endpoint.
+5) Load your data as RDF triples.
+6) Expose the databases's SPARQL endpoint for Linked Data applications to query.
