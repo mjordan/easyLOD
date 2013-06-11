@@ -25,8 +25,11 @@ $app = new \Slim\Slim(
 $app->get('/resource/:identifier', function ($identifier) use ($app) {
   $identifier_namespace = getIdentifierNamespace($identifier);
   $request = $app->request();
-  // If the request is from a Linked Data browser, redirect it to the 'data' URL.
-  if ($request->headers('Accept') == 'application/rdf+xml') {
+  // If the request is from a Linked Data browser (that is, one issuing a
+  // Accept: application/rdf+xml request header), redirect it to the 'data' URL.
+  // Temporary regex match until Slim supports content negotiation: see
+  // http://help.slimframework.com/discussions/questions/65-content-types.
+  if (preg_match('/application\/rdf\+xml/', $request->headers('Accept'))) {
     $data_path = swapPaths($request->getPath(), 'data');
     $url = $request->getUrl() . $data_path;
     $app->redirect($url, 303);
