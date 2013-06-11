@@ -33,6 +33,7 @@ $app->get('/resource/:identifier', function ($identifier) use ($app) {
     $data_path = swapPaths($request->getPath(), 'data');
     $url = $request->getUrl() . $data_path;
     $app->redirect($url, 303);
+    $app->response()->header('Vary', 'Accept');
   }
   // If the request is not from a Linked Data browser, redirect it to a human-readable
   // page for the item.
@@ -53,7 +54,7 @@ $app->get('/data/:identifier', function ($identifier) use ($app) {
   require 'data_sources/' . $identifier_namespace . '/' . $identifier_namespace . '.php';
 
   $request = $app->request();
-  $app->response()->header('Content-Type', 'text/xml');
+  $app->response()->header('Content-Type', 'application/rdf+xml;charset=utf-8');
   $xml = new XMLWriter();
   $xml->openMemory();
   $xml->setIndent(TRUE);
