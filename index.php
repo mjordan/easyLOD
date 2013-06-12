@@ -11,9 +11,7 @@
 // Slim setup.
 require 'lib/Slim/Slim.php';
 \Slim\Slim::registerAutoloader();
-$app = new \Slim\Slim(
-    // 'mode' => 'production' // Comment out in production.
-);
+$app = new \Slim\Slim();
 
 /**
  * Route for /resource. Redirect browsers that supply a request header of
