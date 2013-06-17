@@ -53,8 +53,21 @@ $app->get('/data/:identifier', function ($identifier) use ($app) {
 
   $request = $app->request();
   $app->response()->header('Content-Type', 'application/rdf+xml;charset=utf-8');
+
   $xml = new XMLWriter();
   $xml->openMemory();
+
+  // Check to see if the data source plugin is supplying raw XML and if
+  // so, return the XML to the client.
+  if (function_exists('getResourceDataRaw')) {
+    $xml = getResourceDataRaw($identifier, $xml, $app);
+    echo $xml->outputMemory();
+    // We need to return TRUE to get Slim to ouput the correct Content-Type header.
+    return TRUE;
+  }
+
+  // If the data source plugin is not returning raw XML, start generating the
+  // output XML.
   $xml->setIndent(TRUE);
   $xml->startDocument('1.0', 'utf-8', NULL);
   $xml->startElementNS('rdf', 'RDF', NULL);

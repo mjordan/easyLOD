@@ -1,9 +1,12 @@
 <?php
 
 /**
- * Data source plugin for easyLOD that gets the MODS XML from an Institutional
- * Repository (in this case, an Islandora IR). Islandora exposes full MODS
- * docuements, so this plugin simply wraps the MODS in RDF.
+ * Data source plugin for easyLOD that serves up static RDF files. 
+ *
+ * In this sample plugin, the RDF files were created from MODS documents
+ * retrieved from http://www.islandscholar.ca/ and transformed into MODSRDF 
+ * using the XSL stylesheet at http://www.loc.gov/standards/mods/modsrdf/modsrdf.xsl.
+ * This transformation was done in a batch offline, not in realtime by this plugin.
  */
 
 /**
@@ -13,10 +16,9 @@
  */
 function dataSourceConfig() {
   return array(
-    // The base URL of the repository's MODs URLs.
-    'data_base_url' => 'http://www.islandorarepo.ca/download_ds/',
-    // The base URL of the repository's website.
-    'web_base_url' => 'http://www.islandorarepo.ca/fedora/repository/',
+    // Absolute path to the static files (in this sample plugin, the same directory
+    // this script is in). Include the trailing '/'.
+    'data_base_path' => dirname(__FILE__) . '/',
   );
 }
 
@@ -34,32 +36,42 @@ function getDataSourceNamespaces() {
 /**
  * Required function.
  *
- * Defines the 'human-readable' web page for an item.
+ * Defines the 'human-readable' web page for an item. In the case of the MODSRDF
+ * files used in this example, the URL of the human-readable representation of
+ * the resource is expressed in the 'rdf:about' attribute of the top-level
+ * modsrdf:ModsResource element. Each plugin that serves up static RDF will need
+ * will need to parse its own URL, or generate HTML from the static RDF files. 
  */
 function getWebPage($identifier, $app) {
   $config = dataSourceConfig();
-  list($namespace, $fedora_ns, $fedora_autoincrement) = explode(':', $identifier);
-  $url = $config['web_base_url'] . $fedora_ns. ':' . $fedora_autoincrement;
+  list($namespace, $uniqueId) = explode(':', $identifier);
+  $filePath = $config['data_base_path'] . $uniqueId. '.rdf';
+  // Parse the value of the 'rdf:about' attribute of the top-level
+  // modsrdf:ModsResource element. The XML looks like this: 
+  // <modsrdf:ModsResource rdf:about="http://www.islandscholar.ca/fedora/repository/ir:6223">.
+  $xml = simplexml_load_file($filePath);
+  $xml->registerXPathNamespace("modsrdf", "http://www.loc.gov/mods/rdf/v1#");
+  $xml->registerXPathNamespace("rdf", "http://www.w3.org/1999/02/22-rdf-syntax-ns#");
+  $modsResource = $xml->xpath('//modsrdf:ModsResource');
+  $url = (string) $modsResource[0]->attributes('rdf', TRUE)->about;
   $app->redirect($url, 303);
 }
 
 /**
- * Required function.
+ * Required function (if getResourceData() not used).
  *
- * Retrieve the MODS XML for the item and insert it into the 
- * RDF XML.
+ * Retrieve the raw RDF XML for the item and return it.
  */ 
-function getResourceData($identifier, $xml, $app) {
-  list($namespace, $fedora_ns, $fedora_autoincrement) = explode(':', $identifier);
+function getResourceDataRaw($identifier, $xml, $app) {
   $config = dataSourceConfig();
-  $data_url = $config['data_base_url'] . $fedora_ns . ':' . $fedora_autoincrement . '/MODS';
-  if ($mods_xml = file_get_contents($data_url)) {
-    // We have the MODS XML, so all we need to do is insert it into the RDF XML.
-    $xml->writeRaw($mods_xml);
+  list($namespace, $uniqueId) = explode(':', $identifier);
+  $filePath = $config['data_base_path'] . $uniqueId. '.rdf';
+  if (file_exists($filePath)) {
+    $xmlString = file_get_contents($filePath);
+    $xml->writeRaw($xmlString);
     return $xml;
   }
   else {
     $app->halt(404);
   }
 }
-
