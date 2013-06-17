@@ -17,7 +17,8 @@ All plugins must contain the following functions:
 * dataSourceConfig()
 * getDataSourceNamespaces()
 * getWebPage()
-* getResourceData()
+* getResourceData() 
+* getResourceDataRaw() (if serving up raw RDF)
 
 Documentation on these functions is available in the sample plugins.
 
