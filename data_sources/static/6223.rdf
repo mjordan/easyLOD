@@ -1,0 +1,582 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:fo="http://www.w3.org/1999/XSL/Format"
+         xmlns:xs="http://www.w3.org/2001/XMLSchema"
+         xmlns:fn="http://www.w3.org/2005/xpath-functions"
+         xmlns:mods="http://www.loc.gov/mods/v3"
+         xmlns:modsrdf="http://www.loc.gov/mods/rdf/v1#"
+         xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:identifier="http://id.loc.gov/vocabulary/identifier/"
+         xmlns:relator="http://id.loc.gov/vocabulary/relator/"
+         xmlns:note="http://id.loc.gov/vocabulary/note/"
+         xmlns:abstract="http://id.loc.gov/vocabulary/abstract/"
+         xmlns:access="http://id.loc.gov/vocabulary/access/"
+         xmlns:class="http://id.loc.gov/vocabulary/class/"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:ri="http://id.loc.gov/ontologies/RecordInfo#"
+         xmlns:xlink="http://www.w3.org/1999/xlink"><!--
+
+This RDF description created by the stylesheet at http://www.loc.gov/standards/mods/modsrdf/modsrdf.xsl 
+
+--><!--
+*******************************************************
+   Top level element
+*******************************************************
+-->
+   <modsrdf:ModsResource rdf:about="http://www.islandscholar.ca/fedora/repository/ir:6223">
+
+<!--
+	
+*******************************************************
+   rdf:type  statement for each resource type
+*******************************************************
+-->
+      <rdf:type rdf:resource="http://id.loc.gov/vocabulary/resourceType#Text"/>
+      <!--
+	*******************************************************
+  names
+*******************************************************
+-->      <!--
+			** Name **			
+			-->
+      <name xmlns="http://www.loc.gov/mods/rdf/v1#">
+         <PersonalName xmlns="http://www.loc.gov/mads/rdf/v1#" rdf:about="d1e6">
+            <label xmlns="http://www.w3.org/2000/01/rdf-schema#">  David J.  McIver    </label>
+            <elementList rdf:parseType="Collection">
+               <FamilyNameElement>
+                  <elementValue>McIver</elementValue>
+               </FamilyNameElement>
+               <GivenNameElement>
+                  <elementValue>David J.</elementValue>
+               </GivenNameElement>
+            </elementList>
+         </PersonalName>
+      </name>
+      <!--
+**** Roles for this name.
+-->
+      <modsrdf:roleRelationship>
+         <modsrdf:RoleRelationship>
+            <modsrdf:roleRelationshipRole>author</modsrdf:roleRelationshipRole>
+            <modsrdf:roleRelationshipName rdf:resource="d1e6"/>
+         </modsrdf:RoleRelationship>
+      </modsrdf:roleRelationship>
+      <!--
+			** Name **			
+			-->
+      <name xmlns="http://www.loc.gov/mods/rdf/v1#">
+         <PersonalName xmlns="http://www.loc.gov/mads/rdf/v1#" rdf:about="d1e24">
+            <label xmlns="http://www.w3.org/2000/01/rdf-schema#">  John  VanLeeuwen    </label>
+            <elementList rdf:parseType="Collection">
+               <FamilyNameElement>
+                  <elementValue>VanLeeuwen</elementValue>
+               </FamilyNameElement>
+               <GivenNameElement>
+                  <elementValue>John</elementValue>
+               </GivenNameElement>
+            </elementList>
+         </PersonalName>
+      </name>
+      <!--
+**** Roles for this name.
+-->
+      <modsrdf:roleRelationship>
+         <modsrdf:RoleRelationship>
+            <modsrdf:roleRelationshipRole>Thesis advisor</modsrdf:roleRelationshipRole>
+            <modsrdf:roleRelationshipName rdf:resource="d1e24"/>
+         </modsrdf:RoleRelationship>
+      </modsrdf:roleRelationship>
+      <!--
+			** Name **			
+			-->
+      <name xmlns="http://www.loc.gov/mods/rdf/v1#">
+         <PersonalName xmlns="http://www.loc.gov/mads/rdf/v1#" rdf:about="d1e39">
+            <label xmlns="http://www.w3.org/2000/01/rdf-schema#">  Elizabeth  Spangler    </label>
+            <elementList rdf:parseType="Collection">
+               <FamilyNameElement>
+                  <elementValue>Spangler</elementValue>
+               </FamilyNameElement>
+               <GivenNameElement>
+                  <elementValue>Elizabeth</elementValue>
+               </GivenNameElement>
+            </elementList>
+         </PersonalName>
+      </name>
+      <!--
+**** Roles for this name.
+-->
+      <modsrdf:roleRelationship>
+         <modsrdf:RoleRelationship>
+            <modsrdf:roleRelationshipRole>Supervisory Committee Member</modsrdf:roleRelationshipRole>
+            <modsrdf:roleRelationshipName rdf:resource="d1e39"/>
+         </modsrdf:RoleRelationship>
+      </modsrdf:roleRelationship>
+      <!--
+			** Name **			
+			-->
+      <name xmlns="http://www.loc.gov/mods/rdf/v1#">
+         <PersonalName xmlns="http://www.loc.gov/mads/rdf/v1#" rdf:about="d1e54">
+            <label xmlns="http://www.w3.org/2000/01/rdf-schema#">  Judy  Guernsey    </label>
+            <elementList rdf:parseType="Collection">
+               <FamilyNameElement>
+                  <elementValue>Guernsey</elementValue>
+               </FamilyNameElement>
+               <GivenNameElement>
+                  <elementValue>Judy</elementValue>
+               </GivenNameElement>
+            </elementList>
+         </PersonalName>
+      </name>
+      <!--
+**** Roles for this name.
+-->
+      <modsrdf:roleRelationship>
+         <modsrdf:RoleRelationship>
+            <modsrdf:roleRelationshipRole>Supervisory Committee Member</modsrdf:roleRelationshipRole>
+            <modsrdf:roleRelationshipName rdf:resource="d1e54"/>
+         </modsrdf:RoleRelationship>
+      </modsrdf:roleRelationship>
+      <!--
+			** Name **			
+			-->
+      <name xmlns="http://www.loc.gov/mods/rdf/v1#">
+         <PersonalName xmlns="http://www.loc.gov/mads/rdf/v1#" rdf:about="d1e70">
+            <label xmlns="http://www.w3.org/2000/01/rdf-schema#">  Collins  Kamunde    </label>
+            <elementList rdf:parseType="Collection">
+               <FamilyNameElement>
+                  <elementValue>Kamunde</elementValue>
+               </FamilyNameElement>
+               <GivenNameElement>
+                  <elementValue>Collins</elementValue>
+               </GivenNameElement>
+            </elementList>
+         </PersonalName>
+      </name>
+      <!--
+**** Roles for this name.
+-->
+      <modsrdf:roleRelationship>
+         <modsrdf:RoleRelationship>
+            <modsrdf:roleRelationshipRole>Supervisory Committee Member</modsrdf:roleRelationshipRole>
+            <modsrdf:roleRelationshipName rdf:resource="d1e70"/>
+         </modsrdf:RoleRelationship>
+      </modsrdf:roleRelationship>
+      <!--
+			** Name **			
+			-->
+      <name xmlns="http://www.loc.gov/mods/rdf/v1#">
+         <PersonalName xmlns="http://www.loc.gov/mads/rdf/v1#" rdf:about="d1e85">
+            <label xmlns="http://www.w3.org/2000/01/rdf-schema#">  David  Fleming    </label>
+            <elementList rdf:parseType="Collection">
+               <FamilyNameElement>
+                  <elementValue>Fleming</elementValue>
+               </FamilyNameElement>
+               <GivenNameElement>
+                  <elementValue>David</elementValue>
+               </GivenNameElement>
+            </elementList>
+         </PersonalName>
+      </name>
+      <!--
+**** Roles for this name.
+-->
+      <modsrdf:roleRelationship>
+         <modsrdf:RoleRelationship>
+            <modsrdf:roleRelationshipRole>Supervisory Committee Member</modsrdf:roleRelationshipRole>
+            <modsrdf:roleRelationshipName rdf:resource="d1e85"/>
+         </modsrdf:RoleRelationship>
+      </modsrdf:roleRelationship>
+      <!--
+			** Name **			
+			-->
+      <name xmlns="http://www.loc.gov/mods/rdf/v1#">
+         <PersonalName xmlns="http://www.loc.gov/mads/rdf/v1#" rdf:about="d1e100">
+            <label xmlns="http://www.w3.org/2000/01/rdf-schema#">  Fiona  McNeill    </label>
+            <elementList rdf:parseType="Collection">
+               <FamilyNameElement>
+                  <elementValue>McNeill</elementValue>
+               </FamilyNameElement>
+               <GivenNameElement>
+                  <elementValue>Fiona</elementValue>
+               </GivenNameElement>
+            </elementList>
+         </PersonalName>
+      </name>
+      <!--
+**** Roles for this name.
+-->
+      <modsrdf:roleRelationship>
+         <modsrdf:RoleRelationship>
+            <modsrdf:roleRelationshipRole>Examination Committee Member</modsrdf:roleRelationshipRole>
+            <modsrdf:roleRelationshipName rdf:resource="d1e100"/>
+         </modsrdf:RoleRelationship>
+      </modsrdf:roleRelationship>
+      <!--
+			** Name **			
+			-->
+      <name xmlns="http://www.loc.gov/mods/rdf/v1#">
+         <PersonalName xmlns="http://www.loc.gov/mads/rdf/v1#" rdf:about="d1e115">
+            <label xmlns="http://www.w3.org/2000/01/rdf-schema#">  Jeffery  Davidson    </label>
+            <elementList rdf:parseType="Collection">
+               <FamilyNameElement>
+                  <elementValue>Davidson</elementValue>
+               </FamilyNameElement>
+               <GivenNameElement>
+                  <elementValue>Jeffery</elementValue>
+               </GivenNameElement>
+            </elementList>
+         </PersonalName>
+      </name>
+      <!--
+**** Roles for this name.
+-->
+      <modsrdf:roleRelationship>
+         <modsrdf:RoleRelationship>
+            <modsrdf:roleRelationshipRole>Examination Committee Member</modsrdf:roleRelationshipRole>
+            <modsrdf:roleRelationshipName rdf:resource="d1e115"/>
+         </modsrdf:RoleRelationship>
+      </modsrdf:roleRelationship>
+      <!--
+			** Name **			
+			-->
+      <name xmlns="http://www.loc.gov/mods/rdf/v1#">
+         <PersonalName xmlns="http://www.loc.gov/mads/rdf/v1#" rdf:about="d1e130">
+            <label xmlns="http://www.w3.org/2000/01/rdf-schema#">  John  VanLeeuwen    </label>
+            <elementList rdf:parseType="Collection">
+               <FamilyNameElement>
+                  <elementValue>VanLeeuwen</elementValue>
+               </FamilyNameElement>
+               <GivenNameElement>
+                  <elementValue>John</elementValue>
+               </GivenNameElement>
+            </elementList>
+         </PersonalName>
+      </name>
+      <!--
+**** Roles for this name.
+-->
+      <modsrdf:roleRelationship>
+         <modsrdf:RoleRelationship>
+            <modsrdf:roleRelationshipRole>Examination Committee Member</modsrdf:roleRelationshipRole>
+            <modsrdf:roleRelationshipName rdf:resource="d1e130"/>
+         </modsrdf:RoleRelationship>
+      </modsrdf:roleRelationship>
+      <!--
+			** Name **			
+			-->
+      <name xmlns="http://www.loc.gov/mods/rdf/v1#">
+         <PersonalName xmlns="http://www.loc.gov/mads/rdf/v1#" rdf:about="d1e145">
+            <label xmlns="http://www.w3.org/2000/01/rdf-schema#">  Sophie  St.-Hilaire    </label>
+            <elementList rdf:parseType="Collection">
+               <FamilyNameElement>
+                  <elementValue>St.-Hilaire</elementValue>
+               </FamilyNameElement>
+               <GivenNameElement>
+                  <elementValue>Sophie</elementValue>
+               </GivenNameElement>
+            </elementList>
+         </PersonalName>
+      </name>
+      <!--
+**** Roles for this name.
+-->
+      <modsrdf:roleRelationship>
+         <modsrdf:RoleRelationship>
+            <modsrdf:roleRelationshipRole>Examination Committee Member</modsrdf:roleRelationshipRole>
+            <modsrdf:roleRelationshipName rdf:resource="d1e145"/>
+         </modsrdf:RoleRelationship>
+      </modsrdf:roleRelationship>
+      <!--
+			** Name **			
+			-->
+      <name xmlns="http://www.loc.gov/mods/rdf/v1#">
+         <PersonalName xmlns="http://www.loc.gov/mads/rdf/v1#" rdf:about="d1e161">
+            <label xmlns="http://www.w3.org/2000/01/rdf-schema#">  Collins  Kamunde    </label>
+            <elementList rdf:parseType="Collection">
+               <FamilyNameElement>
+                  <elementValue>Kamunde</elementValue>
+               </FamilyNameElement>
+               <GivenNameElement>
+                  <elementValue>Collins</elementValue>
+               </GivenNameElement>
+            </elementList>
+         </PersonalName>
+      </name>
+      <!--
+**** Roles for this name.
+-->
+      <modsrdf:roleRelationship>
+         <modsrdf:RoleRelationship>
+            <modsrdf:roleRelationshipRole>Examination Committee Member</modsrdf:roleRelationshipRole>
+            <modsrdf:roleRelationshipName rdf:resource="d1e161"/>
+         </modsrdf:RoleRelationship>
+      </modsrdf:roleRelationship>
+      <!--
+	
+*******************************************************
+  titles
+*******************************************************
+-->      <!--
+		
+*******  Principal Title
+-->      <titlePrincipal xmlns="http://www.loc.gov/mods/rdf/v1#">
+         <Title xmlns="http://www.loc.gov/mads/rdf/v1#">
+            <label xmlns="http://www.w3.org/2000/01/rdf-schema#">Arsenic biomonitoring in rural Nova Scotia, Canada: </label>
+            <elementList rdf:parseType="Collection">
+
+               <mainTitleElement>
+                  <elementValue>Arsenic biomonitoring in rural Nova Scotia, Canada</elementValue>
+               </mainTitleElement>
+               <SubTitleElement>
+                  <elementValue/>
+               </SubTitleElement>
+            </elementList>
+         </Title>
+      </titlePrincipal>
+      <!--
+
+***************************
+identifier(s)
+***************************
+-->
+      <modsrdf:identifierGroup>
+         <IdentifierGroup>
+            <identifierGroupType>modsRDFIdentifier</identifierGroupType>
+            <identifierGroupValue>http://www.islandscholar.ca/fedora/repository/ir:6223</identifierGroupValue>
+         </IdentifierGroup>
+      </modsrdf:identifierGroup>
+
+      <modsrdf:identifierGroup>
+         <IdentifierGroup>
+            <identifierGroupType>u1</identifierGroupType>
+            <identifierGroupValue>jvanleeuwen</identifierGroupValue>
+         </IdentifierGroup>
+      </modsrdf:identifierGroup>
+
+      <modsrdf:identifierGroup>
+         <IdentifierGroup>
+            <identifierGroupType>u1</identifierGroupType>
+            <identifierGroupValue>spangler</identifierGroupValue>
+         </IdentifierGroup>
+      </modsrdf:identifierGroup>
+
+      <modsrdf:identifierGroup>
+         <IdentifierGroup>
+            <identifierGroupType>u1</identifierGroupType>
+            <identifierGroupValue>ckamunde</identifierGroupValue>
+         </IdentifierGroup>
+      </modsrdf:identifierGroup>
+
+      <modsrdf:identifierGroup>
+         <IdentifierGroup>
+            <identifierGroupType>u2</identifierGroupType>
+            <identifierGroupValue>Health Management</identifierGroupValue>
+         </IdentifierGroup>
+      </modsrdf:identifierGroup>
+
+      <modsrdf:identifierGroup>
+         <IdentifierGroup>
+            <identifierGroupType>u2</identifierGroupType>
+            <identifierGroupValue>Biomedical Sciences</identifierGroupValue>
+         </IdentifierGroup>
+      </modsrdf:identifierGroup>
+
+      <identifier:isbn/>
+
+      <modsrdf:identifierGroup>
+         <IdentifierGroup>
+            <identifierGroupType>lac</identifierGroupType>
+            <identifierGroupValue>TC-PCU-6223</identifierGroupValue>
+         </IdentifierGroup>
+      </modsrdf:identifierGroup>
+      <!--
+
+***************************
+subject(s)
+***************************
+-->      <subjectComplex xmlns="http://www.loc.gov/mods/rdf/v1#">
+         <ComplexSubject xmlns="http://www.loc.gov/mads/rdf/v1#">
+            <rdfs:label>. . . </rdfs:label>
+            <componentList rdf:parseType="Collection">
+
+               <Topic>
+                  <label xmlns="http://www.w3.org/2000/01/rdf-schema#"/>
+                  <elementList rdf:parseType="Collection">
+                     <TopicElement>
+                        <elementValue/>
+                     </TopicElement>
+                  </elementList>
+
+               </Topic>
+               <Geographic>
+                  <label xmlns="http://www.w3.org/2000/01/rdf-schema#"/>
+                  <elementList rdf:parseType="Collection">
+                     <GeographicElement>
+                        <elementValue/>
+                     </GeographicElement>
+                  </elementList>
+
+               </Geographic>
+               <Temporal>
+                  <label xmlns="http://www.w3.org/2000/01/rdf-schema#"/>
+                  <elementList rdf:parseType="Collection">
+                     <TemporalElement>
+                        <elementValue/>
+                     </TemporalElement>
+                  </elementList>
+
+               </Temporal>
+            </componentList>
+         </ComplexSubject>
+      </subjectComplex>
+      <subjectComplex xmlns="http://www.loc.gov/mods/rdf/v1#">
+         <ComplexSubject xmlns="http://www.loc.gov/mads/rdf/v1#">
+            <rdfs:label>. </rdfs:label>
+            <componentList rdf:parseType="Collection">
+
+               <Topic>
+                  <label xmlns="http://www.w3.org/2000/01/rdf-schema#"/>
+                  <elementList rdf:parseType="Collection">
+                     <TopicElement>
+                        <elementValue/>
+                     </TopicElement>
+                  </elementList>
+
+               </Topic>
+            </componentList>
+         </ComplexSubject>
+      </subjectComplex>
+      <!--
+
+***************************
+genre(s)
+***************************
+-->      <!--
+		
+*******genre
+-->      <modsrdf:genre>
+         <GenreForm xmlns="http://www.loc.gov/mads/rdf/v1#">
+            <rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#GenreForm"/>
+            <rdfs:label>thesis</rdfs:label>
+            <elementList rdf:parseType="Collection">
+               <GenreFormElement>
+                  <elementValue>thesis</elementValue>
+               </GenreFormElement>
+            </elementList>
+         </GenreForm>
+      </modsrdf:genre>
+
+
+      <!--
+	
+*************************
+simple elements 
+*************************
+-->
+
+      <!--**********abstract-->
+      <abstract xmlns="http://www.loc.gov/mods/rdf/v1#">The objectives of this thesis were: 1) to determine which factors and biological samples were associated with the estimated amount of total arsenic (As) consumed from water and food; 2) to determine which factors were associated with the concentration of total and speciated As ([As]) in urine; 3) to determine which factors were associated with the total [As] in nails and hair; and 4) to evaluate a novel method of quantifying As in human nails via x-ray fluorescence (XRF).
+In 2010, a questionnaire was administered to 179 people from two locations in Nova Scotia, Canada. The questionnaire collected information on participants’ eating and drinking habits, and key social and demographic information such as: cigarette and alcohol consumption, length of time in home, household income, etc. Water and biological samples, collected from each participant, were analyzed by Inductively Coupled Plasma-Mass Spectrometry (ICP-MS) to quantify the total concentration of As ([As]) and selenium (Se) in each. Total water [As] ranged from &lt;0.02 – 309.2 g/L. Total [As] of urine (adjusted by specific gravity, SG), fingernails, toenails, and hair ranged from &lt;0.71 – 661.1 g/L, from &lt;0.07 – 2.3 g/g, from &lt;0.15 – 4.1 g/g, and from &lt;0.15 – 13.2 g/g, respectively.
+Total urinary [As] was associated with estimated total amounts of As consumed from water and food in the last 3 days. Total fingernail [As] and water pH were also associated with the amount of As consumed from water, and income was associated with food As consumption. The depth of the well used to draw
+vi
+drinking water was associated with water As consumption and total As consumption, especially between the depths of 22 – 55 m.
+High Performance Liquid Chromatography was used to measure arsenite (As(III)), arsenate (As(V)), monomethylarsonic acid (MMA(V)), dimethylarsinic acid (DMA(V)), arsenobetaine (AsB), and total urinary arsenic metabolites minus arsenobetaine (TMA), in urine. Total water [As] was a strong positive predictor of all urinary As metabolite concentrations, with the exception of AsB. Consumption of seafood was positively associated with urinary concentrations of total As and AsB, but also As(III), DMA(V), and TMA, suggesting that seafood-derived As may be metabolized in the body to other As metabolites. Both total [As] and [AsB] in urine were found to be slightly higher in older participants. Participants who reported recent consumption of chicken also had slightly increased concentrations of urinary As(V). Finally, a strong positive relationship was found between water pH and MMA(V), DMA(V), and TMA concentrations in urine.
+Multiple linear and logistic regression analyses found that water [As] and sample [Se] were predictors of [As] in hair and nails. This finding supports previous research which has found a high degree of interaction between As and Se in humans, which is important to consider when performing an As biomonitoring study.
+Evaluation of the XRF found the concordance correlation coefficient and kappa value were highest for fingernail samples of at least 20 mg in mass, but overall, XRF did not compare well to ICP-MS. Using a clinically relevant
+vii
+concentration of 1.0 g/g on ICP-MS as a cut-off for indicating test positive and test negative samples, the XRF, also using a cut-off of 1.0 g/g, was found to have 100% sensitivity (95% CI: 48 – 100%) and negative predictive value (95% CI: 63 – 100%), however its specificity and positive predictive values were low, at 29% (95% CI: 17 – 43%) and 19% (95% CI: 8 – 33%), respectively.
+Further research involving urine as a biological marker of exposure to As should take specific urinary As metabolites into consideration and pay special attention to seafood consumption, which can strongly affect urinary [As], and can potentially lead to an increase in toxic inorganic As metabolites. Studies of As in hair or nails should consider the total and relative concentrations of Se in respective samples. More work is needed before the XRF can be considered a suitable replacement for ICP-MS.</abstract>
+
+      <!--**********accessCondition-->
+      <accessCondition xmlns="http://www.loc.gov/mods/rdf/v1#">The author has agreed that the Library, University of Prince Edward Island, may make this thesis freely available for inspection. Moreover, the author has agreed that permission for extensive copying of this thesis for scholarly purposes may be granted by the professor or professors who supervised the thesis work recorded herein or, in their absence, by the Chair of the Department or the Dean of the Faculty in which the thesis work was done. It is understood that due recognition will be given to the author of this thesis and to the University of Prince Edward Island in any use of the material in this thesis. Copying or publication or any other use of the thesis for financial gain without approval by the University of Prince Edward Island and the author’s written permission is prohibited.
+Requests for permission to copy or to make any other use of material in this thesis in whole or in part should be addressed to:
+Chair of the Department of Health Management
+Faculty of Veterinary Medicine
+University of Prince Edward Island
+Charlottetown, P.E.I.
+Canada C1A 4P3</accessCondition>
+
+      <!--**********accessCondition-->
+      <accessCondition xmlns="http://www.loc.gov/mods/rdf/v1#"/>
+
+      <!--**********accessCondition-->
+      <accessCondition xmlns="http://www.loc.gov/mods/rdf/v1#">Contact Author</accessCondition>
+
+      <!--
+	
+*************************
+other elements 
+*************************
+-->
+      <!--
+		
+*******language
+-->
+      <LanguageOfResource xmlns="http://www.loc.gov/mods/rdf/v1#"
+                          rdf:resource="http://id.loc.gov/vocabulary/language#eng"/>
+      <!--
+		
+***************location
+-->      <locationOfResource xmlns="http://www.loc.gov/mods/rdf/v1#">
+         <Location>
+            <locationUrl>http://www.islandscholar.ca/download_ds/ir:6223/PDF</locationUrl>
+         </Location>
+      </locationOfResource>
+
+      <!--
+		
+*******  publisher
+-->
+      <publisher xmlns="http://www.loc.gov/mods/rdf/v1#">
+         <CorporateName xmlns="http://www.loc.gov/mads/rdf/v1#">
+            <label xmlns="http://www.w3.org/2000/01/rdf-schema#">University of Prince Edward Island</label>
+            <elementList rdf:parseType="Collection">
+               <FullNameElement>
+                  <elementValue>University of Prince Edward Island</elementValue>
+               </FullNameElement>
+            </elementList>
+         </CorporateName>
+      </publisher>
+      <!--
+		
+*******place of origin
+-->
+      <placeOfOrigin xmlns="http://www.loc.gov/mods/rdf/v1#">
+         <Geographic xmlns="http://www.loc.gov/mads/rdf/v1#">
+            <label xmlns="http://www.w3.org/2000/01/rdf-schema#">Charlottetown, P.E.I.</label>
+            <elementList rdf:parseType="Collection">
+               <GeographicElement>
+                  <elementValue>Charlottetown, P.E.I.</elementValue>
+               </GeographicElement>
+            </elementList>
+         </Geographic>
+      </placeOfOrigin>
+      <resourceDateIssued xmlns="http://www.loc.gov/mods/rdf/v1#" rdf:datatype="xsd:string">2013</resourceDateIssued>
+      <resourceDate xmlns="http://www.loc.gov/mods/rdf/v1#" rdf:datatype="xsd:date">T00:00:00Z</resourceDate>
+
+      <!--**********issuance-->
+      <issuance xmlns="http://www.loc.gov/mods/rdf/v1#">monographic</issuance>
+
+      <resourceDate xmlns="http://www.loc.gov/mods/rdf/v1#" rdf:datatype="xsd:date">T00:00:00Z</resourceDate>
+
+
+
+      <!--**********physicalForm-->
+      <physicalForm xmlns="http://www.loc.gov/mods/rdf/v1#">electronic</physicalForm>
+
+
+      <!--**********physicalExtent-->
+      <physicalExtent xmlns="http://www.loc.gov/mods/rdf/v1#">347</physicalExtent>
+
+
+      <!--**********mediaType-->
+      <mediaType xmlns="http://www.loc.gov/mods/rdf/v1#">application/pdf</mediaType>
+
+
+      <!--**********physicalForm-->
+      <physicalForm xmlns="http://www.loc.gov/mods/rdf/v1#">PUBLISHED</physicalForm>
+
+      <!--
+**************************************************************
+-->   </modsrdf:ModsResource>
+</rdf:RDF>

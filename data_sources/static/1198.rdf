@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:fo="http://www.w3.org/1999/XSL/Format"
+         xmlns:xs="http://www.w3.org/2001/XMLSchema"
+         xmlns:fn="http://www.w3.org/2005/xpath-functions"
+         xmlns:mods="http://www.loc.gov/mods/v3"
+         xmlns:modsrdf="http://www.loc.gov/mods/rdf/v1#"
+         xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:identifier="http://id.loc.gov/vocabulary/identifier/"
+         xmlns:relator="http://id.loc.gov/vocabulary/relator/"
+         xmlns:note="http://id.loc.gov/vocabulary/note/"
+         xmlns:abstract="http://id.loc.gov/vocabulary/abstract/"
+         xmlns:access="http://id.loc.gov/vocabulary/access/"
+         xmlns:class="http://id.loc.gov/vocabulary/class/"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:ri="http://id.loc.gov/ontologies/RecordInfo#"
+         xmlns:xlink="http://www.w3.org/1999/xlink"><!--
+
+This RDF description created by the stylesheet at http://www.loc.gov/standards/mods/modsrdf/modsrdf.xsl 
+
+--><!--
+*******************************************************
+   Top level element
+*******************************************************
+-->
+   <modsrdf:ModsResource rdf:about="http://www.islandscholar.ca/fedora/repository/ir:1198">
+
+<!--
+	
+*******************************************************
+   rdf:type  statement for each resource type
+*******************************************************
+-->
+      <rdf:type rdf:resource="http://id.loc.gov/vocabulary/resourceType#Text"/>
+      <!--
+	*******************************************************
+  names
+*******************************************************
+-->      <!--
+			** Name **			
+			-->
+      <name xmlns="http://www.loc.gov/mods/rdf/v1#">
+         <PersonalName xmlns="http://www.loc.gov/mads/rdf/v1#" rdf:about="d1e9">
+            <label xmlns="http://www.w3.org/2000/01/rdf-schema#">  A.  Pérez-Gómez    </label>
+            <elementList rdf:parseType="Collection">
+               <FamilyNameElement>
+                  <elementValue>Pérez-Gómez</elementValue>
+               </FamilyNameElement>
+               <GivenNameElement>
+                  <elementValue>A.</elementValue>
+               </GivenNameElement>
+            </elementList>
+         </PersonalName>
+      </name>
+      <!--
+**** Roles for this name.
+-->
+      <modsrdf:roleRelationship>
+         <modsrdf:RoleRelationship>
+            <modsrdf:roleRelationshipRole>author</modsrdf:roleRelationshipRole>
+            <modsrdf:roleRelationshipName rdf:resource="d1e9"/>
+         </modsrdf:RoleRelationship>
+      </modsrdf:roleRelationship>
+      <!--
+			** Name **			
+			-->
+      <name xmlns="http://www.loc.gov/mods/rdf/v1#">
+         <PersonalName xmlns="http://www.loc.gov/mads/rdf/v1#" rdf:about="d1e24">
+            <label xmlns="http://www.w3.org/2000/01/rdf-schema#">  R. A.  Tasker    </label>
+            <elementList rdf:parseType="Collection">
+               <FamilyNameElement>
+                  <elementValue>Tasker</elementValue>
+               </FamilyNameElement>
+               <GivenNameElement>
+                  <elementValue>R. A.</elementValue>
+               </GivenNameElement>
+            </elementList>
+         </PersonalName>
+      </name>
+      <!--
+**** Roles for this name.
+-->
+      <modsrdf:roleRelationship>
+         <modsrdf:RoleRelationship>
+            <modsrdf:roleRelationshipRole>author</modsrdf:roleRelationshipRole>
+            <modsrdf:roleRelationshipName rdf:resource="d1e24"/>
+         </modsrdf:RoleRelationship>
+      </modsrdf:roleRelationship>
+      <!--
+	
+*******************************************************
+  titles
+*******************************************************
+-->      <!--
+		
+*******  Principal Title
+-->      <titlePrincipal xmlns="http://www.loc.gov/mods/rdf/v1#">
+         <Title xmlns="http://www.loc.gov/mads/rdf/v1#">
+            <label xmlns="http://www.w3.org/2000/01/rdf-schema#">Enhanced neurogenesis in organotypic cultures of rat hippocampus after transient subfield-selective excitotoxic insult induced by domoic acid</label>
+            <elementList rdf:parseType="Collection">
+
+               <mainTitleElement>
+                  <elementValue>Enhanced neurogenesis in organotypic cultures of rat hippocampus after transient subfield-selective excitotoxic insult induced by domoic acid</elementValue>
+               </mainTitleElement>
+            </elementList>
+         </Title>
+      </titlePrincipal>
+      <!--
+
+***************************
+identifier(s)
+***************************
+-->
+      <modsrdf:identifierGroup>
+         <IdentifierGroup>
+            <identifierGroupType>u1</identifierGroupType>
+            <identifierGroupValue>tasker</identifierGroupValue>
+         </IdentifierGroup>
+      </modsrdf:identifierGroup>
+
+      <modsrdf:identifierGroup>
+         <IdentifierGroup>
+            <identifierGroupType>refworks</identifierGroupType>
+            <identifierGroupValue>15708</identifierGroupValue>
+         </IdentifierGroup>
+      </modsrdf:identifierGroup>
+
+      <identifier:doi>10.1016/j.neuroscience.2012.02.003</identifier:doi>
+
+      <modsrdf:identifierGroup>
+         <IdentifierGroup>
+            <identifierGroupType>u2</identifierGroupType>
+            <identifierGroupValue>Biomedical Sciences</identifierGroupValue>
+         </IdentifierGroup>
+      </modsrdf:identifierGroup>
+      <!--
+
+***************************
+subject(s)
+***************************
+-->      <subjectComplex xmlns="http://www.loc.gov/mods/rdf/v1#">
+         <ComplexSubject xmlns="http://www.loc.gov/mads/rdf/v1#">
+            <rdfs:label>neurotoxicity. neurogenesis. NeuN. GFAP. AMPA/kainate. dentate gyrus. </rdfs:label>
+            <componentList rdf:parseType="Collection">
+
+               <Topic>
+                  <label xmlns="http://www.w3.org/2000/01/rdf-schema#">neurotoxicity</label>
+                  <elementList rdf:parseType="Collection">
+                     <TopicElement>
+                        <elementValue>neurotoxicity</elementValue>
+                     </TopicElement>
+                  </elementList>
+
+               </Topic>
+               <Topic>
+                  <label xmlns="http://www.w3.org/2000/01/rdf-schema#">neurogenesis</label>
+                  <elementList rdf:parseType="Collection">
+                     <TopicElement>
+                        <elementValue>neurogenesis</elementValue>
+                     </TopicElement>
+                  </elementList>
+
+               </Topic>
+               <Topic>
+                  <label xmlns="http://www.w3.org/2000/01/rdf-schema#">NeuN</label>
+                  <elementList rdf:parseType="Collection">
+                     <TopicElement>
+                        <elementValue>NeuN</elementValue>
+                     </TopicElement>
+                  </elementList>
+
+               </Topic>
+               <Topic>
+                  <label xmlns="http://www.w3.org/2000/01/rdf-schema#">GFAP</label>
+                  <elementList rdf:parseType="Collection">
+                     <TopicElement>
+                        <elementValue>GFAP</elementValue>
+                     </TopicElement>
+                  </elementList>
+
+               </Topic>
+               <Topic>
+                  <label xmlns="http://www.w3.org/2000/01/rdf-schema#">AMPA/kainate</label>
+                  <elementList rdf:parseType="Collection">
+                     <TopicElement>
+                        <elementValue>AMPA/kainate</elementValue>
+                     </TopicElement>
+                  </elementList>
+
+               </Topic>
+               <Topic>
+                  <label xmlns="http://www.w3.org/2000/01/rdf-schema#">dentate gyrus</label>
+                  <elementList rdf:parseType="Collection">
+                     <TopicElement>
+                        <elementValue>dentate gyrus</elementValue>
+                     </TopicElement>
+                  </elementList>
+
+               </Topic>
+            </componentList>
+         </ComplexSubject>
+      </subjectComplex>
+      <!--
+
+***************************
+genre(s)
+***************************
+-->      <!--
+		
+*******genre
+-->      <modsrdf:genre>
+         <GenreForm xmlns="http://www.loc.gov/mads/rdf/v1#">
+            <rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#GenreForm"/>
+            <rdfs:label>Journal Article</rdfs:label>
+            <elementList rdf:parseType="Collection">
+               <GenreFormElement>
+                  <elementValue>Journal Article</elementValue>
+               </GenreFormElement>
+            </elementList>
+         </GenreForm>
+      </modsrdf:genre>
+
+
+      <!--
+	
+*************************
+simple elements 
+*************************
+-->
+
+      <!--**********abstract-->
+      <abstract xmlns="http://www.loc.gov/mods/rdf/v1#">New neurons are continuously generated in the hippocampus and may play an important role in many physiological and pathological conditions. Here we present evidence of cell proliferation and neurogenesis after a selective and transient excitotoxic injury to the hippocampal cornu ammonis 1 (CA1) area induced by low concentrations of domoic acid (DOM) in rat organotypic hippocampal slice cultures (OHSC). DOM is an excitatory amino acid analog to kainic acid that acts through glutamate receptors to elicit a rapid and potent excitotoxic response. Exposure of slice cultures to varying concentrations of DOM for 24 h induced dose-dependent neuronal toxicity that was independent of activation of classic apoptotic markers. Treatment with 2 μM DOM for 24 h caused a selective yet transient neurotoxic injury in the CA1 subfield of the hippocampus that appeared recovered after 7 days of incubation in a DOM-free medium and showed significant microgliosis but no sign of astrogliosis. The DOM insult (2 μM, 24 h) resulted in a significant upregulation of cell proliferation, as assessed by 5-bromo-2-deoxyuridine (BrdU) incorporation, and a concurrent increase of the neuronal precursor cell marker doublecortin (DCX) within the subgranular zone of the dentate gyrus and area CA1. Neurogenesis occurred primarily during the first week after termination of the DOM exposure. Our study shows that exposure of OHSC to concentrations of DOM below those required to induce permanent neurotoxicity can induce proliferation and differentiation of neural progenitor cells that may contribute to recovery from mild injury and to develop abnormal circuits relevant to disease.</abstract>
+
+      <!--
+	
+*************************
+other elements 
+*************************
+-->
+      <!--
+		
+***************location
+-->      <locationOfResource xmlns="http://www.loc.gov/mods/rdf/v1#">
+         <Location>
+            <locationUrl>http://www.sciencedirect.com/science/article/pii/S0306452212001066</locationUrl>
+         </Location>
+      </locationOfResource>
+      <!--
+		
+*******typed note 
+-->
+      <modsrdf:noteGroup>
+         <modsrdf:NoteGroup>
+            <modsrdf:noteGroupType/>
+            <modsrdf:noteGroupValue>Source type:  Electronic(1)</modsrdf:noteGroupValue>
+         </modsrdf:NoteGroup>
+      </modsrdf:noteGroup>
+
+
+      <!--
+					
+				
+********************************  relatedItems follow *****************************************				
+				-->      <!--
+**************relatedItem****************
+-->      <relatedHost>
+<!--
+*******************************************************
+   Top level element
+*******************************************************
+-->         <modsrdf:ModsResource rdf:about="http://www.loc.gov/mods/rdf/v1#MODS123456">
+<!--
+	
+*******************************************************
+  titles
+*******************************************************
+--><!--
+		
+*******  Principal Title
+-->            <titlePrincipal xmlns="http://www.loc.gov/mods/rdf/v1#">
+               <Title xmlns="http://www.loc.gov/mads/rdf/v1#">
+                  <label xmlns="http://www.w3.org/2000/01/rdf-schema#">Neuroscience</label>
+                  <elementList rdf:parseType="Collection">
+
+                     <mainTitleElement>
+                        <elementValue>Neuroscience</elementValue>
+                     </mainTitleElement>
+                  </elementList>
+                  <hasAbbreviatedVariant>
+                     <Title>
+                        <variantLabel>Neuroscience</variantLabel>
+                        <elementList rdf:parseType="Collection">
+
+                           <mainTitleElement>
+                              <elementValue>Neuroscience</elementValue>
+                           </mainTitleElement>
+                        </elementList>
+                     </Title>
+                  </hasAbbreviatedVariant>
+
+               </Title>
+            </titlePrincipal>
+            <!--
+
+***************************
+identifier(s)
+***************************
+-->
+            <modsrdf:identifierGroup>
+               <IdentifierGroup>
+                  <identifierGroupType>issn</identifierGroupType>
+                  <identifierGroupValue>0306-4522</identifierGroupValue>
+               </IdentifierGroup>
+            </modsrdf:identifierGroup>
+
+            <!--
+	
+*************************
+other elements 
+*************************
+-->
+
+            <resourceDateIssued xmlns="http://www.loc.gov/mods/rdf/v1#" rdf:datatype="xsd:string">2012</resourceDateIssued>
+
+            <!--
+		
+*******part
+-->
+            <part xmlns="http://www.loc.gov/mods/rdf/v1#">
+               <Part>
+                  <partUnit>page</partUnit>
+                  <partDetailType>volume issue</partDetailType>
+                  <partDate rdf:datatype="xsd:string">2012</partDate>
+                  <partNumber>208</partNumber>
+                  <partNumber>0</partNumber>
+                  <partStart>97</partStart>
+                  <partEnd>108</partEnd>
+               </Part>
+            </part>
+            <!--
+**************************************************************
+-->         </modsrdf:ModsResource>
+      </relatedHost>
+
+      <!--
+**************************************************************
+-->   </modsrdf:ModsResource>
+</rdf:RDF>

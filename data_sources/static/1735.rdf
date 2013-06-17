@@ -1,0 +1,1091 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:fo="http://www.w3.org/1999/XSL/Format"
+         xmlns:xs="http://www.w3.org/2001/XMLSchema"
+         xmlns:fn="http://www.w3.org/2005/xpath-functions"
+         xmlns:mods="http://www.loc.gov/mods/v3"
+         xmlns:modsrdf="http://www.loc.gov/mods/rdf/v1#"
+         xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:identifier="http://id.loc.gov/vocabulary/identifier/"
+         xmlns:relator="http://id.loc.gov/vocabulary/relator/"
+         xmlns:note="http://id.loc.gov/vocabulary/note/"
+         xmlns:abstract="http://id.loc.gov/vocabulary/abstract/"
+         xmlns:access="http://id.loc.gov/vocabulary/access/"
+         xmlns:class="http://id.loc.gov/vocabulary/class/"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:ri="http://id.loc.gov/ontologies/RecordInfo#"
+         xmlns:xlink="http://www.w3.org/1999/xlink"><!--
+
+This RDF description created by the stylesheet at http://www.loc.gov/standards/mods/modsrdf/modsrdf.xsl 
+
+--><!--
+*******************************************************
+   Top level element
+*******************************************************
+-->
+   <modsrdf:ModsResource rdf:about="http://www.islandscholar.ca/fedora/repository/ir:1735">
+
+<!--
+	
+*******************************************************
+   rdf:type  statement for each resource type
+*******************************************************
+-->
+      <rdf:type rdf:resource="http://id.loc.gov/vocabulary/resourceType#Text"/>
+      <!--
+	*******************************************************
+  names
+*******************************************************
+-->      <!--
+			** Name **			
+			-->
+      <name xmlns="http://www.loc.gov/mods/rdf/v1#">
+         <PersonalName xmlns="http://www.loc.gov/mads/rdf/v1#" rdf:about="d1e9">
+            <label xmlns="http://www.w3.org/2000/01/rdf-schema#">  C.  Andreasen    </label>
+            <elementList rdf:parseType="Collection">
+               <FamilyNameElement>
+                  <elementValue>Andreasen</elementValue>
+               </FamilyNameElement>
+               <GivenNameElement>
+                  <elementValue>C.</elementValue>
+               </GivenNameElement>
+            </elementList>
+         </PersonalName>
+      </name>
+      <!--
+**** Roles for this name.
+-->
+      <modsrdf:roleRelationship>
+         <modsrdf:RoleRelationship>
+            <modsrdf:roleRelationshipRole>author</modsrdf:roleRelationshipRole>
+            <modsrdf:roleRelationshipName rdf:resource="d1e9"/>
+         </modsrdf:RoleRelationship>
+      </modsrdf:roleRelationship>
+      <!--
+			** Name **			
+			-->
+      <name xmlns="http://www.loc.gov/mods/rdf/v1#">
+         <PersonalName xmlns="http://www.loc.gov/mads/rdf/v1#" rdf:about="d1e24">
+            <label xmlns="http://www.w3.org/2000/01/rdf-schema#">  H.  Stryhn    </label>
+            <elementList rdf:parseType="Collection">
+               <FamilyNameElement>
+                  <elementValue>Stryhn</elementValue>
+               </FamilyNameElement>
+               <GivenNameElement>
+                  <elementValue>H.</elementValue>
+               </GivenNameElement>
+            </elementList>
+         </PersonalName>
+      </name>
+      <!--
+**** Roles for this name.
+-->
+      <modsrdf:roleRelationship>
+         <modsrdf:RoleRelationship>
+            <modsrdf:roleRelationshipRole>author</modsrdf:roleRelationshipRole>
+            <modsrdf:roleRelationshipName rdf:resource="d1e24"/>
+         </modsrdf:RoleRelationship>
+      </modsrdf:roleRelationship>
+      <!--
+	
+*******************************************************
+  titles
+*******************************************************
+-->      <!--
+		
+*******  Principal Title
+-->      <titlePrincipal xmlns="http://www.loc.gov/mods/rdf/v1#">
+         <Title xmlns="http://www.loc.gov/mads/rdf/v1#">
+            <label xmlns="http://www.w3.org/2000/01/rdf-schema#">Increasing weed flora in Danish beet, pea and winter barley fields</label>
+            <elementList rdf:parseType="Collection">
+
+               <mainTitleElement>
+                  <elementValue>Increasing weed flora in Danish beet, pea and winter barley fields</elementValue>
+               </mainTitleElement>
+            </elementList>
+         </Title>
+      </titlePrincipal>
+      <!--
+
+***************************
+identifier(s)
+***************************
+-->
+      <modsrdf:identifierGroup>
+         <IdentifierGroup>
+            <identifierGroupType>u1</identifierGroupType>
+            <identifierGroupValue>hstryhn</identifierGroupValue>
+         </IdentifierGroup>
+      </modsrdf:identifierGroup>
+
+      <modsrdf:identifierGroup>
+         <IdentifierGroup>
+            <identifierGroupType>refworks</identifierGroupType>
+            <identifierGroupValue>16431</identifierGroupValue>
+         </IdentifierGroup>
+      </modsrdf:identifierGroup>
+
+      <modsrdf:identifierGroup>
+         <IdentifierGroup>
+            <identifierGroupType>u2</identifierGroupType>
+            <identifierGroupValue>Health Management</identifierGroupValue>
+         </IdentifierGroup>
+      </modsrdf:identifierGroup>
+      <!--
+
+***************************
+subject(s)
+***************************
+-->      <subjectComplex xmlns="http://www.loc.gov/mods/rdf/v1#">
+         <ComplexSubject xmlns="http://www.loc.gov/mads/rdf/v1#">
+            <rdfs:label>barley. flora. peas. species composition. species diversity. species richness. sugarbeet. weeds. wild relatives. Denmark. Apera spica-venti. Beta vulgaris. Beta vulgaris var. saccharifera. Capsella bursa-pastoris. Chenopodium album. Cirsium arvense. Elymus repens. Galium aparine. Geranium. Hordeum vulgare. Matricaria perforata. Pisum sativum. plants. Poa annua. Polygonum convolvulus. Sinapis arvensis. Veronica arvensis. Viola arvensis. Apera. Poaceae. Cyperales. monocotyledons. angiosperms. Spermatophyta. eukaryotes. Beta. Chenopodiaceae. Caryophyllales. dicotyledons. Capsella. Brassicaceae. Capparidales. Chenopodium. Cirsium. Asteraceae. Asterales. Developed Countries. European Union Countries. OECD Countries. Scandinavia. Northern Europe. Europe. Elymus. Galium. Rubiaceae. Rubiales. Gentianales. Geraniaceae. Geraniales. Hordeum. Matricaria. Pisum. Papilionoideae. Fabaceae. Fabales. Poa. Fallopia. Bilderdykia. Polygonum. Polygonaceae. Polygonales. Sinapis. Veronica. Scrophulariaceae. Scrophulariales. Viola. Violaceae. Violales. Capparales. Geranium pusillum. pea. Field Crops (FF005) (New March 2000). Weeds and Noxious Plants (FF500). Plant Ecology (ZZ331). </rdfs:label>
+            <componentList rdf:parseType="Collection">
+
+               <Topic>
+                  <label xmlns="http://www.w3.org/2000/01/rdf-schema#">barley</label>
+                  <elementList rdf:parseType="Collection">
+                     <TopicElement>
+                        <elementValue>barley</elementValue>
+                     </TopicElement>
+                  </elementList>
+
+               </Topic>
+               <Topic>
+                  <label xmlns="http://www.w3.org/2000/01/rdf-schema#">flora</label>
+                  <elementList rdf:parseType="Collection">
+                     <TopicElement>
+                        <elementValue>flora</elementValue>
+                     </TopicElement>
+                  </elementList>
+
+               </Topic>
+               <Topic>
+                  <label xmlns="http://www.w3.org/2000/01/rdf-schema#">peas</label>
+                  <elementList rdf:parseType="Collection">
+                     <TopicElement>
+                        <elementValue>peas</elementValue>
+                     </TopicElement>
+                  </elementList>
+
+               </Topic>
+               <Topic>
+                  <label xmlns="http://www.w3.org/2000/01/rdf-schema#">species composition</label>
+                  <elementList rdf:parseType="Collection">
+                     <TopicElement>
+                        <elementValue>species composition</elementValue>
+                     </TopicElement>
+                  </elementList>
+
+               </Topic>
+               <Topic>
+                  <label xmlns="http://www.w3.org/2000/01/rdf-schema#">species diversity</label>
+                  <elementList rdf:parseType="Collection">
+                     <TopicElement>
+                        <elementValue>species diversity</elementValue>
+                     </TopicElement>
+                  </elementList>
+
+               </Topic>
+               <Topic>
+                  <label xmlns="http://www.w3.org/2000/01/rdf-schema#">species richness</label>
+                  <elementList rdf:parseType="Collection">
+                     <TopicElement>
+                        <elementValue>species richness</elementValue>
+                     </TopicElement>
+                  </elementList>
+
+               </Topic>
+               <Topic>
+                  <label xmlns="http://www.w3.org/2000/01/rdf-schema#">sugarbeet</label>
+                  <elementList rdf:parseType="Collection">
+                     <TopicElement>
+                        <elementValue>sugarbeet</elementValue>
+                     </TopicElement>
+                  </elementList>
+
+               </Topic>
+               <Topic>
+                  <label xmlns="http://www.w3.org/2000/01/rdf-schema#">weeds</label>
+                  <elementList rdf:parseType="Collection">
+                     <TopicElement>
+                        <elementValue>weeds</elementValue>
+                     </TopicElement>
+                  </elementList>
+
+               </Topic>
+               <Topic>
+                  <label xmlns="http://www.w3.org/2000/01/rdf-schema#">wild relatives</label>
+                  <elementList rdf:parseType="Collection">
+                     <TopicElement>
+                        <elementValue>wild relatives</elementValue>
+                     </TopicElement>
+                  </elementList>
+
+               </Topic>
+               <Topic>
+                  <label xmlns="http://www.w3.org/2000/01/rdf-schema#">Denmark</label>
+                  <elementList rdf:parseType="Collection">
+                     <TopicElement>
+                        <elementValue>Denmark</elementValue>
+                     </TopicElement>
+                  </elementList>
+
+               </Topic>
+               <Topic>
+                  <label xmlns="http://www.w3.org/2000/01/rdf-schema#">Apera spica-venti</label>
+                  <elementList rdf:parseType="Collection">
+                     <TopicElement>
+                        <elementValue>Apera spica-venti</elementValue>
+                     </TopicElement>
+                  </elementList>
+
+               </Topic>
+               <Topic>
+                  <label xmlns="http://www.w3.org/2000/01/rdf-schema#">Beta vulgaris</label>
+                  <elementList rdf:parseType="Collection">
+                     <TopicElement>
+                        <elementValue>Beta vulgaris</elementValue>
+                     </TopicElement>
+                  </elementList>
+
+               </Topic>
+               <Topic>
+                  <label xmlns="http://www.w3.org/2000/01/rdf-schema#">Beta vulgaris var. saccharifera</label>
+                  <elementList rdf:parseType="Collection">
+                     <TopicElement>
+                        <elementValue>Beta vulgaris var. saccharifera</elementValue>
+                     </TopicElement>
+                  </elementList>
+
+               </Topic>
+               <Topic>
+                  <label xmlns="http://www.w3.org/2000/01/rdf-schema#">Capsella bursa-pastoris</label>
+                  <elementList rdf:parseType="Collection">
+                     <TopicElement>
+                        <elementValue>Capsella bursa-pastoris</elementValue>
+                     </TopicElement>
+                  </elementList>
+
+               </Topic>
+               <Topic>
+                  <label xmlns="http://www.w3.org/2000/01/rdf-schema#">Chenopodium album</label>
+                  <elementList rdf:parseType="Collection">
+                     <TopicElement>
+                        <elementValue>Chenopodium album</elementValue>
+                     </TopicElement>
+                  </elementList>
+
+               </Topic>
+               <Topic>
+                  <label xmlns="http://www.w3.org/2000/01/rdf-schema#">Cirsium arvense</label>
+                  <elementList rdf:parseType="Collection">
+                     <TopicElement>
+                        <elementValue>Cirsium arvense</elementValue>
+                     </TopicElement>
+                  </elementList>
+
+               </Topic>
+               <Topic>
+                  <label xmlns="http://www.w3.org/2000/01/rdf-schema#">Elymus repens</label>
+                  <elementList rdf:parseType="Collection">
+                     <TopicElement>
+                        <elementValue>Elymus repens</elementValue>
+                     </TopicElement>
+                  </elementList>
+
+               </Topic>
+               <Topic>
+                  <label xmlns="http://www.w3.org/2000/01/rdf-schema#">Galium aparine</label>
+                  <elementList rdf:parseType="Collection">
+                     <TopicElement>
+                        <elementValue>Galium aparine</elementValue>
+                     </TopicElement>
+                  </elementList>
+
+               </Topic>
+               <Topic>
+                  <label xmlns="http://www.w3.org/2000/01/rdf-schema#">Geranium</label>
+                  <elementList rdf:parseType="Collection">
+                     <TopicElement>
+                        <elementValue>Geranium</elementValue>
+                     </TopicElement>
+                  </elementList>
+
+               </Topic>
+               <Topic>
+                  <label xmlns="http://www.w3.org/2000/01/rdf-schema#">Hordeum vulgare</label>
+                  <elementList rdf:parseType="Collection">
+                     <TopicElement>
+                        <elementValue>Hordeum vulgare</elementValue>
+                     </TopicElement>
+                  </elementList>
+
+               </Topic>
+               <Topic>
+                  <label xmlns="http://www.w3.org/2000/01/rdf-schema#">Matricaria perforata</label>
+                  <elementList rdf:parseType="Collection">
+                     <TopicElement>
+                        <elementValue>Matricaria perforata</elementValue>
+                     </TopicElement>
+                  </elementList>
+
+               </Topic>
+               <Topic>
+                  <label xmlns="http://www.w3.org/2000/01/rdf-schema#">Pisum sativum</label>
+                  <elementList rdf:parseType="Collection">
+                     <TopicElement>
+                        <elementValue>Pisum sativum</elementValue>
+                     </TopicElement>
+                  </elementList>
+
+               </Topic>
+               <Topic>
+                  <label xmlns="http://www.w3.org/2000/01/rdf-schema#">plants</label>
+                  <elementList rdf:parseType="Collection">
+                     <TopicElement>
+                        <elementValue>plants</elementValue>
+                     </TopicElement>
+                  </elementList>
+
+               </Topic>
+               <Topic>
+                  <label xmlns="http://www.w3.org/2000/01/rdf-schema#">Poa annua</label>
+                  <elementList rdf:parseType="Collection">
+                     <TopicElement>
+                        <elementValue>Poa annua</elementValue>
+                     </TopicElement>
+                  </elementList>
+
+               </Topic>
+               <Topic>
+                  <label xmlns="http://www.w3.org/2000/01/rdf-schema#">Polygonum convolvulus</label>
+                  <elementList rdf:parseType="Collection">
+                     <TopicElement>
+                        <elementValue>Polygonum convolvulus</elementValue>
+                     </TopicElement>
+                  </elementList>
+
+               </Topic>
+               <Topic>
+                  <label xmlns="http://www.w3.org/2000/01/rdf-schema#">Sinapis arvensis</label>
+                  <elementList rdf:parseType="Collection">
+                     <TopicElement>
+                        <elementValue>Sinapis arvensis</elementValue>
+                     </TopicElement>
+                  </elementList>
+
+               </Topic>
+               <Topic>
+                  <label xmlns="http://www.w3.org/2000/01/rdf-schema#">Veronica arvensis</label>
+                  <elementList rdf:parseType="Collection">
+                     <TopicElement>
+                        <elementValue>Veronica arvensis</elementValue>
+                     </TopicElement>
+                  </elementList>
+
+               </Topic>
+               <Topic>
+                  <label xmlns="http://www.w3.org/2000/01/rdf-schema#">Viola arvensis</label>
+                  <elementList rdf:parseType="Collection">
+                     <TopicElement>
+                        <elementValue>Viola arvensis</elementValue>
+                     </TopicElement>
+                  </elementList>
+
+               </Topic>
+               <Topic>
+                  <label xmlns="http://www.w3.org/2000/01/rdf-schema#">Apera</label>
+                  <elementList rdf:parseType="Collection">
+                     <TopicElement>
+                        <elementValue>Apera</elementValue>
+                     </TopicElement>
+                  </elementList>
+
+               </Topic>
+               <Topic>
+                  <label xmlns="http://www.w3.org/2000/01/rdf-schema#">Poaceae</label>
+                  <elementList rdf:parseType="Collection">
+                     <TopicElement>
+                        <elementValue>Poaceae</elementValue>
+                     </TopicElement>
+                  </elementList>
+
+               </Topic>
+               <Topic>
+                  <label xmlns="http://www.w3.org/2000/01/rdf-schema#">Cyperales</label>
+                  <elementList rdf:parseType="Collection">
+                     <TopicElement>
+                        <elementValue>Cyperales</elementValue>
+                     </TopicElement>
+                  </elementList>
+
+               </Topic>
+               <Topic>
+                  <label xmlns="http://www.w3.org/2000/01/rdf-schema#">monocotyledons</label>
+                  <elementList rdf:parseType="Collection">
+                     <TopicElement>
+                        <elementValue>monocotyledons</elementValue>
+                     </TopicElement>
+                  </elementList>
+
+               </Topic>
+               <Topic>
+                  <label xmlns="http://www.w3.org/2000/01/rdf-schema#">angiosperms</label>
+                  <elementList rdf:parseType="Collection">
+                     <TopicElement>
+                        <elementValue>angiosperms</elementValue>
+                     </TopicElement>
+                  </elementList>
+
+               </Topic>
+               <Topic>
+                  <label xmlns="http://www.w3.org/2000/01/rdf-schema#">Spermatophyta</label>
+                  <elementList rdf:parseType="Collection">
+                     <TopicElement>
+                        <elementValue>Spermatophyta</elementValue>
+                     </TopicElement>
+                  </elementList>
+
+               </Topic>
+               <Topic>
+                  <label xmlns="http://www.w3.org/2000/01/rdf-schema#">eukaryotes</label>
+                  <elementList rdf:parseType="Collection">
+                     <TopicElement>
+                        <elementValue>eukaryotes</elementValue>
+                     </TopicElement>
+                  </elementList>
+
+               </Topic>
+               <Topic>
+                  <label xmlns="http://www.w3.org/2000/01/rdf-schema#">Beta</label>
+                  <elementList rdf:parseType="Collection">
+                     <TopicElement>
+                        <elementValue>Beta</elementValue>
+                     </TopicElement>
+                  </elementList>
+
+               </Topic>
+               <Topic>
+                  <label xmlns="http://www.w3.org/2000/01/rdf-schema#">Chenopodiaceae</label>
+                  <elementList rdf:parseType="Collection">
+                     <TopicElement>
+                        <elementValue>Chenopodiaceae</elementValue>
+                     </TopicElement>
+                  </elementList>
+
+               </Topic>
+               <Topic>
+                  <label xmlns="http://www.w3.org/2000/01/rdf-schema#">Caryophyllales</label>
+                  <elementList rdf:parseType="Collection">
+                     <TopicElement>
+                        <elementValue>Caryophyllales</elementValue>
+                     </TopicElement>
+                  </elementList>
+
+               </Topic>
+               <Topic>
+                  <label xmlns="http://www.w3.org/2000/01/rdf-schema#">dicotyledons</label>
+                  <elementList rdf:parseType="Collection">
+                     <TopicElement>
+                        <elementValue>dicotyledons</elementValue>
+                     </TopicElement>
+                  </elementList>
+
+               </Topic>
+               <Topic>
+                  <label xmlns="http://www.w3.org/2000/01/rdf-schema#">Capsella</label>
+                  <elementList rdf:parseType="Collection">
+                     <TopicElement>
+                        <elementValue>Capsella</elementValue>
+                     </TopicElement>
+                  </elementList>
+
+               </Topic>
+               <Topic>
+                  <label xmlns="http://www.w3.org/2000/01/rdf-schema#">Brassicaceae</label>
+                  <elementList rdf:parseType="Collection">
+                     <TopicElement>
+                        <elementValue>Brassicaceae</elementValue>
+                     </TopicElement>
+                  </elementList>
+
+               </Topic>
+               <Topic>
+                  <label xmlns="http://www.w3.org/2000/01/rdf-schema#">Capparidales</label>
+                  <elementList rdf:parseType="Collection">
+                     <TopicElement>
+                        <elementValue>Capparidales</elementValue>
+                     </TopicElement>
+                  </elementList>
+
+               </Topic>
+               <Topic>
+                  <label xmlns="http://www.w3.org/2000/01/rdf-schema#">Chenopodium</label>
+                  <elementList rdf:parseType="Collection">
+                     <TopicElement>
+                        <elementValue>Chenopodium</elementValue>
+                     </TopicElement>
+                  </elementList>
+
+               </Topic>
+               <Topic>
+                  <label xmlns="http://www.w3.org/2000/01/rdf-schema#">Cirsium</label>
+                  <elementList rdf:parseType="Collection">
+                     <TopicElement>
+                        <elementValue>Cirsium</elementValue>
+                     </TopicElement>
+                  </elementList>
+
+               </Topic>
+               <Topic>
+                  <label xmlns="http://www.w3.org/2000/01/rdf-schema#">Asteraceae</label>
+                  <elementList rdf:parseType="Collection">
+                     <TopicElement>
+                        <elementValue>Asteraceae</elementValue>
+                     </TopicElement>
+                  </elementList>
+
+               </Topic>
+               <Topic>
+                  <label xmlns="http://www.w3.org/2000/01/rdf-schema#">Asterales</label>
+                  <elementList rdf:parseType="Collection">
+                     <TopicElement>
+                        <elementValue>Asterales</elementValue>
+                     </TopicElement>
+                  </elementList>
+
+               </Topic>
+               <Topic>
+                  <label xmlns="http://www.w3.org/2000/01/rdf-schema#">Developed Countries</label>
+                  <elementList rdf:parseType="Collection">
+                     <TopicElement>
+                        <elementValue>Developed Countries</elementValue>
+                     </TopicElement>
+                  </elementList>
+
+               </Topic>
+               <Topic>
+                  <label xmlns="http://www.w3.org/2000/01/rdf-schema#">European Union Countries</label>
+                  <elementList rdf:parseType="Collection">
+                     <TopicElement>
+                        <elementValue>European Union Countries</elementValue>
+                     </TopicElement>
+                  </elementList>
+
+               </Topic>
+               <Topic>
+                  <label xmlns="http://www.w3.org/2000/01/rdf-schema#">OECD Countries</label>
+                  <elementList rdf:parseType="Collection">
+                     <TopicElement>
+                        <elementValue>OECD Countries</elementValue>
+                     </TopicElement>
+                  </elementList>
+
+               </Topic>
+               <Topic>
+                  <label xmlns="http://www.w3.org/2000/01/rdf-schema#">Scandinavia</label>
+                  <elementList rdf:parseType="Collection">
+                     <TopicElement>
+                        <elementValue>Scandinavia</elementValue>
+                     </TopicElement>
+                  </elementList>
+
+               </Topic>
+               <Topic>
+                  <label xmlns="http://www.w3.org/2000/01/rdf-schema#">Northern Europe</label>
+                  <elementList rdf:parseType="Collection">
+                     <TopicElement>
+                        <elementValue>Northern Europe</elementValue>
+                     </TopicElement>
+                  </elementList>
+
+               </Topic>
+               <Topic>
+                  <label xmlns="http://www.w3.org/2000/01/rdf-schema#">Europe</label>
+                  <elementList rdf:parseType="Collection">
+                     <TopicElement>
+                        <elementValue>Europe</elementValue>
+                     </TopicElement>
+                  </elementList>
+
+               </Topic>
+               <Topic>
+                  <label xmlns="http://www.w3.org/2000/01/rdf-schema#">Elymus</label>
+                  <elementList rdf:parseType="Collection">
+                     <TopicElement>
+                        <elementValue>Elymus</elementValue>
+                     </TopicElement>
+                  </elementList>
+
+               </Topic>
+               <Topic>
+                  <label xmlns="http://www.w3.org/2000/01/rdf-schema#">Galium</label>
+                  <elementList rdf:parseType="Collection">
+                     <TopicElement>
+                        <elementValue>Galium</elementValue>
+                     </TopicElement>
+                  </elementList>
+
+               </Topic>
+               <Topic>
+                  <label xmlns="http://www.w3.org/2000/01/rdf-schema#">Rubiaceae</label>
+                  <elementList rdf:parseType="Collection">
+                     <TopicElement>
+                        <elementValue>Rubiaceae</elementValue>
+                     </TopicElement>
+                  </elementList>
+
+               </Topic>
+               <Topic>
+                  <label xmlns="http://www.w3.org/2000/01/rdf-schema#">Rubiales</label>
+                  <elementList rdf:parseType="Collection">
+                     <TopicElement>
+                        <elementValue>Rubiales</elementValue>
+                     </TopicElement>
+                  </elementList>
+
+               </Topic>
+               <Topic>
+                  <label xmlns="http://www.w3.org/2000/01/rdf-schema#">Gentianales</label>
+                  <elementList rdf:parseType="Collection">
+                     <TopicElement>
+                        <elementValue>Gentianales</elementValue>
+                     </TopicElement>
+                  </elementList>
+
+               </Topic>
+               <Topic>
+                  <label xmlns="http://www.w3.org/2000/01/rdf-schema#">Geraniaceae</label>
+                  <elementList rdf:parseType="Collection">
+                     <TopicElement>
+                        <elementValue>Geraniaceae</elementValue>
+                     </TopicElement>
+                  </elementList>
+
+               </Topic>
+               <Topic>
+                  <label xmlns="http://www.w3.org/2000/01/rdf-schema#">Geraniales</label>
+                  <elementList rdf:parseType="Collection">
+                     <TopicElement>
+                        <elementValue>Geraniales</elementValue>
+                     </TopicElement>
+                  </elementList>
+
+               </Topic>
+               <Topic>
+                  <label xmlns="http://www.w3.org/2000/01/rdf-schema#">Hordeum</label>
+                  <elementList rdf:parseType="Collection">
+                     <TopicElement>
+                        <elementValue>Hordeum</elementValue>
+                     </TopicElement>
+                  </elementList>
+
+               </Topic>
+               <Topic>
+                  <label xmlns="http://www.w3.org/2000/01/rdf-schema#">Matricaria</label>
+                  <elementList rdf:parseType="Collection">
+                     <TopicElement>
+                        <elementValue>Matricaria</elementValue>
+                     </TopicElement>
+                  </elementList>
+
+               </Topic>
+               <Topic>
+                  <label xmlns="http://www.w3.org/2000/01/rdf-schema#">Pisum</label>
+                  <elementList rdf:parseType="Collection">
+                     <TopicElement>
+                        <elementValue>Pisum</elementValue>
+                     </TopicElement>
+                  </elementList>
+
+               </Topic>
+               <Topic>
+                  <label xmlns="http://www.w3.org/2000/01/rdf-schema#">Papilionoideae</label>
+                  <elementList rdf:parseType="Collection">
+                     <TopicElement>
+                        <elementValue>Papilionoideae</elementValue>
+                     </TopicElement>
+                  </elementList>
+
+               </Topic>
+               <Topic>
+                  <label xmlns="http://www.w3.org/2000/01/rdf-schema#">Fabaceae</label>
+                  <elementList rdf:parseType="Collection">
+                     <TopicElement>
+                        <elementValue>Fabaceae</elementValue>
+                     </TopicElement>
+                  </elementList>
+
+               </Topic>
+               <Topic>
+                  <label xmlns="http://www.w3.org/2000/01/rdf-schema#">Fabales</label>
+                  <elementList rdf:parseType="Collection">
+                     <TopicElement>
+                        <elementValue>Fabales</elementValue>
+                     </TopicElement>
+                  </elementList>
+
+               </Topic>
+               <Topic>
+                  <label xmlns="http://www.w3.org/2000/01/rdf-schema#">Poa</label>
+                  <elementList rdf:parseType="Collection">
+                     <TopicElement>
+                        <elementValue>Poa</elementValue>
+                     </TopicElement>
+                  </elementList>
+
+               </Topic>
+               <Topic>
+                  <label xmlns="http://www.w3.org/2000/01/rdf-schema#">Fallopia</label>
+                  <elementList rdf:parseType="Collection">
+                     <TopicElement>
+                        <elementValue>Fallopia</elementValue>
+                     </TopicElement>
+                  </elementList>
+
+               </Topic>
+               <Topic>
+                  <label xmlns="http://www.w3.org/2000/01/rdf-schema#">Bilderdykia</label>
+                  <elementList rdf:parseType="Collection">
+                     <TopicElement>
+                        <elementValue>Bilderdykia</elementValue>
+                     </TopicElement>
+                  </elementList>
+
+               </Topic>
+               <Topic>
+                  <label xmlns="http://www.w3.org/2000/01/rdf-schema#">Polygonum</label>
+                  <elementList rdf:parseType="Collection">
+                     <TopicElement>
+                        <elementValue>Polygonum</elementValue>
+                     </TopicElement>
+                  </elementList>
+
+               </Topic>
+               <Topic>
+                  <label xmlns="http://www.w3.org/2000/01/rdf-schema#">Polygonaceae</label>
+                  <elementList rdf:parseType="Collection">
+                     <TopicElement>
+                        <elementValue>Polygonaceae</elementValue>
+                     </TopicElement>
+                  </elementList>
+
+               </Topic>
+               <Topic>
+                  <label xmlns="http://www.w3.org/2000/01/rdf-schema#">Polygonales</label>
+                  <elementList rdf:parseType="Collection">
+                     <TopicElement>
+                        <elementValue>Polygonales</elementValue>
+                     </TopicElement>
+                  </elementList>
+
+               </Topic>
+               <Topic>
+                  <label xmlns="http://www.w3.org/2000/01/rdf-schema#">Sinapis</label>
+                  <elementList rdf:parseType="Collection">
+                     <TopicElement>
+                        <elementValue>Sinapis</elementValue>
+                     </TopicElement>
+                  </elementList>
+
+               </Topic>
+               <Topic>
+                  <label xmlns="http://www.w3.org/2000/01/rdf-schema#">Veronica</label>
+                  <elementList rdf:parseType="Collection">
+                     <TopicElement>
+                        <elementValue>Veronica</elementValue>
+                     </TopicElement>
+                  </elementList>
+
+               </Topic>
+               <Topic>
+                  <label xmlns="http://www.w3.org/2000/01/rdf-schema#">Scrophulariaceae</label>
+                  <elementList rdf:parseType="Collection">
+                     <TopicElement>
+                        <elementValue>Scrophulariaceae</elementValue>
+                     </TopicElement>
+                  </elementList>
+
+               </Topic>
+               <Topic>
+                  <label xmlns="http://www.w3.org/2000/01/rdf-schema#">Scrophulariales</label>
+                  <elementList rdf:parseType="Collection">
+                     <TopicElement>
+                        <elementValue>Scrophulariales</elementValue>
+                     </TopicElement>
+                  </elementList>
+
+               </Topic>
+               <Topic>
+                  <label xmlns="http://www.w3.org/2000/01/rdf-schema#">Viola</label>
+                  <elementList rdf:parseType="Collection">
+                     <TopicElement>
+                        <elementValue>Viola</elementValue>
+                     </TopicElement>
+                  </elementList>
+
+               </Topic>
+               <Topic>
+                  <label xmlns="http://www.w3.org/2000/01/rdf-schema#">Violaceae</label>
+                  <elementList rdf:parseType="Collection">
+                     <TopicElement>
+                        <elementValue>Violaceae</elementValue>
+                     </TopicElement>
+                  </elementList>
+
+               </Topic>
+               <Topic>
+                  <label xmlns="http://www.w3.org/2000/01/rdf-schema#">Violales</label>
+                  <elementList rdf:parseType="Collection">
+                     <TopicElement>
+                        <elementValue>Violales</elementValue>
+                     </TopicElement>
+                  </elementList>
+
+               </Topic>
+               <Topic>
+                  <label xmlns="http://www.w3.org/2000/01/rdf-schema#">Capparales</label>
+                  <elementList rdf:parseType="Collection">
+                     <TopicElement>
+                        <elementValue>Capparales</elementValue>
+                     </TopicElement>
+                  </elementList>
+
+               </Topic>
+               <Topic>
+                  <label xmlns="http://www.w3.org/2000/01/rdf-schema#">Geranium pusillum</label>
+                  <elementList rdf:parseType="Collection">
+                     <TopicElement>
+                        <elementValue>Geranium pusillum</elementValue>
+                     </TopicElement>
+                  </elementList>
+
+               </Topic>
+               <Topic>
+                  <label xmlns="http://www.w3.org/2000/01/rdf-schema#">pea</label>
+                  <elementList rdf:parseType="Collection">
+                     <TopicElement>
+                        <elementValue>pea</elementValue>
+                     </TopicElement>
+                  </elementList>
+
+               </Topic>
+               <Topic>
+                  <label xmlns="http://www.w3.org/2000/01/rdf-schema#">Field Crops (FF005) (New March 2000)</label>
+                  <elementList rdf:parseType="Collection">
+                     <TopicElement>
+                        <elementValue>Field Crops (FF005) (New March 2000)</elementValue>
+                     </TopicElement>
+                  </elementList>
+
+               </Topic>
+               <Topic>
+                  <label xmlns="http://www.w3.org/2000/01/rdf-schema#">Weeds and Noxious Plants (FF500)</label>
+                  <elementList rdf:parseType="Collection">
+                     <TopicElement>
+                        <elementValue>Weeds and Noxious Plants (FF500)</elementValue>
+                     </TopicElement>
+                  </elementList>
+
+               </Topic>
+               <Topic>
+                  <label xmlns="http://www.w3.org/2000/01/rdf-schema#">Plant Ecology (ZZ331)</label>
+                  <elementList rdf:parseType="Collection">
+                     <TopicElement>
+                        <elementValue>Plant Ecology (ZZ331)</elementValue>
+                     </TopicElement>
+                  </elementList>
+
+               </Topic>
+            </componentList>
+         </ComplexSubject>
+      </subjectComplex>
+      <!--
+
+***************************
+genre(s)
+***************************
+-->      <!--
+		
+*******genre
+-->      <modsrdf:genre>
+         <GenreForm xmlns="http://www.loc.gov/mads/rdf/v1#">
+            <rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#GenreForm"/>
+            <rdfs:label>Journal Article</rdfs:label>
+            <elementList rdf:parseType="Collection">
+               <GenreFormElement>
+                  <elementValue>Journal Article</elementValue>
+               </GenreFormElement>
+            </elementList>
+         </GenreForm>
+      </modsrdf:genre>
+
+
+      <!--
+	
+*************************
+simple elements 
+*************************
+-->
+
+      <!--**********abstract-->
+      <abstract xmlns="http://www.loc.gov/mods/rdf/v1#">In Denmark, several political initiatives have been taken to reduce use of pesticides and fertilizer in order to avoid unwanted side effect of the increasing cropping intensification. Based on two nation wide surveys we investigate flora changes and discuss the changes in relation to biodiversity, crop yield, agricultural management and climate. Our assumption is that the surveys are representative for the country. We present frequency analyses of 90 species recorded in 157 fields surveyed in 1987-89, and in 167 fields surveyed in 2001-04. Based on 4910 circular sample plots in unsprayed areas, we studied flora changes in four crops and showed that the frequency of many weed species have increased. Particularly some winter annual species (e.g. Veronica arvensis L. and Viola arvensis Murray), grass weeds (Poa annua L., Apera spica-venti (L.) P. Beauv.) and nitrophileous species (e.g. Capsella bursa-pastoris (L.) Medik, Cirsium arvense (L. Scop.), Galium aparine L., Fallopia convolvulus (L.) Á. Löwe, Tripleurospermum inodorum (L.) Sch. Bip.) have been favoured. Some weeds have declined in some crops but increased in other crops (e.g. Chenopodium album L., Geranium pusillum L.), while only a few species declined in one crop without increasing in other crops (e.g. Elytrigia repens (L.) Desv. ex Nevski; Sinapis arvensis L). Our data indicate that continuously increasing productivity (increasing yields) seems to be possible simultaneously with enhancing the frequency of the wild flora in arable crops.</abstract>
+
+      <!--
+	
+*************************
+other elements 
+*************************
+-->
+      <!--
+		
+***************location
+-->      <locationOfResource xmlns="http://www.loc.gov/mods/rdf/v1#">
+         <Location>
+            <locationUrl/>
+         </Location>
+      </locationOfResource>
+      <!--
+		
+*******typed note 
+-->
+      <modsrdf:noteGroup>
+         <modsrdf:NoteGroup>
+            <modsrdf:noteGroupType/>
+            <modsrdf:noteGroupValue>Accession Number: 20123165018. Publication Type: Journal Article. Language: English. Number of References: 49 ref. Subject Subsets: Horticultural Science; Sugar Industry; Plant Breeding; Field Crops; Wheat, Barley &amp;amp; Triticale Abstracts; Weeds; Plant Genetic Resources</modsrdf:noteGroupValue>
+         </modsrdf:NoteGroup>
+      </modsrdf:noteGroup>
+
+      <!--
+		
+*******typed note 
+-->
+      <modsrdf:noteGroup>
+         <modsrdf:NoteGroup>
+            <modsrdf:noteGroupType/>
+            <modsrdf:noteGroupValue>Source type:  Electronic(1)</modsrdf:noteGroupValue>
+         </modsrdf:NoteGroup>
+      </modsrdf:noteGroup>
+
+      <!--
+		
+*******typed note 
+-->
+      <modsrdf:noteGroup>
+         <modsrdf:NoteGroup>
+            <modsrdf:noteGroupType/>
+            <modsrdf:noteGroupValue>http://search.ebscohost.com/login.aspx?direct=true&amp;db=lah&amp;AN=20123165018&amp;site=eds-live; http://www.sciencedirect.com/science/journal/02612194</modsrdf:noteGroupValue>
+         </modsrdf:NoteGroup>
+      </modsrdf:noteGroup>
+
+
+      <!--
+					
+				
+********************************  relatedItems follow *****************************************				
+				-->      <!--
+**************relatedItem****************
+-->      <relatedHost>
+<!--
+*******************************************************
+   Top level element
+*******************************************************
+-->         <modsrdf:ModsResource rdf:about="http://www.loc.gov/mods/rdf/v1#MODS123456">
+<!--
+	
+*******************************************************
+  titles
+*******************************************************
+--><!--
+		
+*******  Principal Title
+-->            <titlePrincipal xmlns="http://www.loc.gov/mods/rdf/v1#">
+               <Title xmlns="http://www.loc.gov/mads/rdf/v1#">
+                  <label xmlns="http://www.w3.org/2000/01/rdf-schema#">Crop Protection</label>
+                  <elementList rdf:parseType="Collection">
+
+                     <mainTitleElement>
+                        <elementValue>Crop Protection</elementValue>
+                     </mainTitleElement>
+                  </elementList>
+               </Title>
+            </titlePrincipal>
+            <!--
+
+***************************
+identifier(s)
+***************************
+-->
+            <modsrdf:identifierGroup>
+               <IdentifierGroup>
+                  <identifierGroupType>issn</identifierGroupType>
+                  <identifierGroupValue>0261-2194</identifierGroupValue>
+               </IdentifierGroup>
+            </modsrdf:identifierGroup>
+
+            <!--
+	
+*************************
+other elements 
+*************************
+-->
+
+            <resourceDateIssued xmlns="http://www.loc.gov/mods/rdf/v1#" rdf:datatype="xsd:string">2012</resourceDateIssued>
+
+            <!--
+		
+*******typed note 
+-->
+            <modsrdf:noteGroup>
+               <modsrdf:NoteGroup>
+                  <modsrdf:noteGroupType/>
+                  <modsrdf:noteGroupValue>Andreasen, C.: Department of Agriculture and Ecology, Faculty of Life Sciences, University of Copenhagen, Hoejbakkegaard Allé 13, DK-2630 Taastrup, Denmark.</modsrdf:noteGroupValue>
+               </modsrdf:NoteGroup>
+            </modsrdf:noteGroup>
+
+            <!--
+		
+*******typed note 
+-->
+            <modsrdf:noteGroup>
+               <modsrdf:NoteGroup>
+                  <modsrdf:noteGroupType/>
+                  <modsrdf:noteGroupValue>Oxford; UK</modsrdf:noteGroupValue>
+               </modsrdf:NoteGroup>
+            </modsrdf:noteGroup>
+
+            <!--
+		
+*******typed note 
+-->
+            <modsrdf:noteGroup>
+               <modsrdf:NoteGroup>
+                  <modsrdf:noteGroupType/>
+                  <modsrdf:noteGroupValue>Elsevier Ltd</modsrdf:noteGroupValue>
+               </modsrdf:NoteGroup>
+            </modsrdf:noteGroup>
+
+            <!--
+		
+*******part
+-->
+            <part xmlns="http://www.loc.gov/mods/rdf/v1#">
+               <Part>
+                  <partUnit>page</partUnit>
+                  <partDetailType>volume issue</partDetailType>
+                  <partDate rdf:datatype="xsd:string">2012</partDate>
+                  <partNumber>36</partNumber>
+                  <partNumber/>
+                  <partStart>11</partStart>
+                  <partEnd>17</partEnd>
+               </Part>
+            </part>
+            <!--
+**************************************************************
+-->         </modsrdf:ModsResource>
+      </relatedHost>
+
+      <!--
+**************************************************************
+-->   </modsrdf:ModsResource>
+</rdf:RDF>
