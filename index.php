@@ -28,7 +28,7 @@ if (!isset($plugins)) {
  * source plugin's getWebPage() function.
  */
 $app->get('/resource/:identifier', function ($identifier) use ($app) {
-  $plugin = getDataSourcePlugin($identifier);
+  $plugin = getDataSourcePlugin($identifier, $app);
   $request = $app->request();
   // If the request is from a Linked Data browser (that is, one issuing a
   // Accept: application/rdf+xml request header), redirect it to the 'data' URL.
@@ -55,7 +55,7 @@ $app->get('/resource/:identifier', function ($identifier) use ($app) {
 $app->get('/data/:identifier', function ($identifier) use ($app) {
   // Get the identifier namespace so we can use the corresponding data 
   // source plugin.
-  $plugin = getDataSourcePlugin($identifier);
+  $plugin = getDataSourcePlugin($identifier, $app);
   require 'data_sources/' . $plugin . '/' . $plugin . '.php';
 
   $request = $app->request();
@@ -107,16 +107,29 @@ $app->run();
  */
 
 /**
- * Pick out the identifier 'namespace'.
+ * Determine which plugin to invoke. If a plugin file can't be
+ * found, return a 404.
  */
-function getDataSourcePlugin($identifier) {
+function getDataSourcePlugin($identifier, $app) {
   global $plugins;
   list($namespace, $id) = explode(':', $identifier);
   if (array_key_exists($namespace, $plugins)) {
-    return $plugins[$namespace]['plugin'];
+    $plugin = $plugins[$namespace]['plugin'];
+    if (file_exists('data_sources/' . $plugin . '/' . $plugin . '.php')) { 
+      return $plugins[$namespace]['plugin'];
+    }
+    else {
+      $app->halt(404, 'Resource not found');
+    }
   }
   else {
-    return $namespace;
+    $plugin = $namespace;
+    if (file_exists('data_sources/' . $plugin . '/' . $plugin . '.php')) { 
+      return $namespace;
+    }
+    else {
+      $app->halt(404, 'Resource not found');
+    }
   }
 }
 
