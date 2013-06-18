@@ -17,11 +17,11 @@ easyLOD's goal is to make it as simple to publish Linked Data while incorporatin
 
 Everything on the Web of Data must have a unique URI. HTTP URIs have a server name and a path, and within a given server name, the unique parts of the URI are expressed in its path. If organizations assign unique identifiers to the things it describes, these identifers can be used as the unique parts of URIs.
 
-easyLOD imposes a specific pattern for URIs, namely, a string (the 'namespace'), then a colon (':'), then an ID. The combination of namespace and ID must be unique. For example, a URI managed by easyLOD looks like this:
+easyLOD imposes a specific pattern for URIs, namely, the string 'resource', a string (the 'namespace'), then a colon (':'), then an ID. The combination of namespace and ID must be unique. For example, a URI managed by easyLOD looks like this:
 
-http://myorg.edu/pathtoeasylod/namespace3:foo
+http://myorg.edu/pathtoeasylod/resource/namespace3:foo
 
-The ID (in the case of the example above, 'foo') can be any string of characters that are valid in URIs. easyLOD doesn't assing the IDs -- that's up to you. The namespace (in this case, 'namespace3') maps to a data source plugin. The unique combination of namespace and ID tell easyLOD which data source plugin to use, and then which item managed by that plugin the request is for.
+The ID (in the case of the example above, 'foo') can be any string of characters that are valid in URIs. easyLOD doesn't assing the IDs -- that's up to you. The namespace (in this case, 'namespace3') maps to a data source plugin (but see below for how to create explicit mappings from namespaces to plugins). The unique combination of namespace and ID tell easyLOD which data source plugin to use, and then which item managed by that plugin the request is for.
 
 ## Data source plugins
 
@@ -30,11 +30,38 @@ easyLOD uses plugins to retrieve data, which it then wraps in RDF/XML to send to
 Four plugins are provided with easyLOD: 
 
 * a plugin that retrieves Dublin Core metadata from CONTENTdm (http://contentdm.org/), which provides a web-services API
-* a plugin that retrieves MODS descriptions for items in an Islandora (http://islandora.ca/) repository
 * a plugin that gets FOAF data from a small CSV file (included in the plugin directory)
 * a plugin that retrieves Dublin Core metadata describing books from a MySQL database (SQL file is included in the plugin directory)
+* a plugin that serves static RDF files transformed from MODS descriptions for items in an Islandora (http://islandora.ca/) repository
 
 These are intended to illustrate how information can be retieved from different data sources. 
+
+## Mapping namespaces in resource URIs to data source plugins
+
+There are two ways to tell EasyLOD which namespaces should map to which data source plugins: 1) direct mappings and 2) configured mappings. In a direct mapping, the URI's namespace is identical to the plugin name; in a configured mapping, an entry in a file titled 'plugins.php' indicates which namespaces invoke which plugins. Both approaches can work at the same time, although if there is a conflict, the configured mapping wins.
+
+EasyLOD ships with an example plugins.php file that illustrates the configured mappings. The file contains an associative array $plugins that has members representing namespaces; each of these is also an associative array that defines which data source plugin it to be used and also an optional 'dataSourceConfg' associative array that overrides the plugin's config settings as defined in its dataSourceConfig() function:
+
+```php
+$plugins = array(
+  // Configuration for URIs using the 'foo' namespace.
+  'foo' => array(
+      'plugin' => 'foaf',
+      'dataSourceConfig' => array(
+        'input_file' => 'data_sources/foaf/people_foo.csv',
+      ),
+  ),
+  // Configuration for URIs using the 'bar' namespace.
+  'bar' => array(
+      'plugin' => 'foaf',
+      'dataSourceConfig' => array(
+        'input_file' => 'data_sources/foaf/people_bar.csv',
+      ),
+  ),
+);
+```
+
+All of a plugin's settings must be included in the entries in plugins.php.
 
 ## Installation and testing
 
@@ -55,7 +82,6 @@ You should see the following:
  </rdf:Description>
 </rdf:RDF>
 ```
-
 
 Open a graphical web browser and go to the same URL. You should see a simple web page with this content:
 

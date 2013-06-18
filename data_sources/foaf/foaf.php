@@ -10,10 +10,20 @@
  *
  * Defines configuration settings for this plugin.
  */
-function dataSourceConfig() {
-  return array(
-    'input_file' => 'data_sources/foaf/people.csv',
+function dataSourceConfig($namespace) {
+  // First check to see if this configration is being
+  // overridden in plugins.php.
+  global $plugins;
+  if (array_key_exists($namespace, $plugins)) {
+    return $plugins[$namespace]['dataSourceConfig'];
+  }
+  // If the configuration is not being overridden, use
+  // this one.
+  else {
+    return array(
+      'input_file' => 'data_sources/foaf/people.csv',
     );
+  }
 }
 
 /**
@@ -32,9 +42,9 @@ function getDataSourceNamespaces() {
  * Defines the 'human-readable' web page for an item.
  */
 function getWebPage($identifier, $app) {
-  $config = dataSourceConfig();
   list($namespace, $id) = explode(':', $identifier);
-  if ($record = getCsvRecord($id)) {
+  $config = dataSourceConfig($namespace);
+  if ($record = getCsvRecord($namespace, $id)) {
     // Note: the template must be in Slim's 'templates' directory.
     $app->render('csvtemplate.html', array('metadata' => $record));
   }
@@ -49,11 +59,11 @@ function getWebPage($identifier, $app) {
  * Generate the RDF XML for the item.
  */ 
 function getResourceData($identifier, $xml, $app) {
-  $config = dataSourceConfig();
   list($namespace, $id) = explode(':', $identifier);
+  $config = dataSourceConfig($namespace);
   // Find the record identified by $id and wrap its values
   // in faof: namespaced XML markup.
-  if ($record = getCsvRecord($id)) {
+  if ($record = getCsvRecord($namespace, $id)) {
     foreach ($record as $field => $value) {
       $xml->writeElementNS('foaf', $field, NULL, $value);
     }
@@ -70,8 +80,8 @@ function getResourceData($identifier, $xml, $app) {
  * (first) field. If there is more than one record with the
  * Identifier value of $id, the first matching one is returned.
  */
-function getCsvRecord($id) {
-  $config = dataSourceConfig();
+function getCsvRecord($namespace, $id) {
+  $config = dataSourceConfig($namespace);
   $csv_records = file($config['input_file']);
   $field_names = array_shift($csv_records);
   $field_names = str_getcsv($field_names);
