@@ -40,7 +40,9 @@ These are intended to illustrate how information can be retieved from different 
 
 There are two ways to tell EasyLOD which namespaces should map to which data source plugins: 1) direct mappings and 2) configured mappings. In a direct mapping, the URI's namespace is identical to the plugin name; in a configured mapping, an entry in a file titled 'plugins.php' indicates which namespaces invoke which plugins. Both approaches can work at the same time, although if there is a conflict, the configured mapping wins.
 
-EasyLOD ships with an example plugins.php file that illustrates the configured mappings. The file contains an associative array $plugins that has members representing namespaces; each of these is also an associative array that defines which data source plugin it to be used and also an optional 'dataSourceConfg' associative array that overrides the plugin's config settings as defined in its dataSourceConfig() function:
+If your the namespaces in your resource URIs map one-to-one to your data source plugins, you do not need a plugins.php file.
+
+Configured mappings allow more flexibility in choosing your namespaces, and let you reuse the same plugin for serving up Linked Data for resource URIs containing heterogeneous namespaces. EasyLOD ships with an example plugins.php file that illustrates configured mappings. The file contains an associative array $plugins that has members representing namespaces; each of these is also an associative array that defines which data source plugin it to be used and also an optional 'dataSourceConfg' associative array that overrides the plugin's config settings as defined in its dataSourceConfig() function:
 
 ```php
 $plugins = array(
