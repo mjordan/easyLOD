@@ -13,6 +13,13 @@ require 'lib/Slim/Slim.php';
 \Slim\Slim::registerAutoloader();
 $app = new \Slim\Slim();
 
+// Get the plugin config file and provide a default value for
+// $plugins if the file cannot be loaded.
+include('plugins.php');
+if (!isset($plugins)) {
+  $plugins = array();
+}
+
 /**
  * Route for /resource. Redirect browsers that supply a request header of
  * Accept: application/rdf+xml to this URI get back an RDF representation
@@ -21,7 +28,7 @@ $app = new \Slim\Slim();
  * source plugin's getWebPage() function.
  */
 $app->get('/resource/:identifier', function ($identifier) use ($app) {
-  $identifier_namespace = getIdentifierNamespace($identifier);
+  $plugin = getDataSourcePlugin($identifier);
   $request = $app->request();
   // If the request is from a Linked Data browser (that is, one issuing a
   // Accept: application/rdf+xml request header), redirect it to the 'data' URL.
@@ -36,7 +43,7 @@ $app->get('/resource/:identifier', function ($identifier) use ($app) {
   // If the request is not from a Linked Data browser, redirect it to a human-readable
   // page for the item.
   else {
-    require 'data_sources/' . $identifier_namespace . '/' . $identifier_namespace . '.php';
+    require 'data_sources/' . $plugin . '/' . $plugin . '.php';
     getWebPage($identifier, $app);
   }
 });
@@ -48,8 +55,8 @@ $app->get('/resource/:identifier', function ($identifier) use ($app) {
 $app->get('/data/:identifier', function ($identifier) use ($app) {
   // Get the identifier namespace so we can use the corresponding data 
   // source plugin.
-  $identifier_namespace = getIdentifierNamespace($identifier);
-  require 'data_sources/' . $identifier_namespace . '/' . $identifier_namespace . '.php';
+  $plugin = getDataSourcePlugin($identifier);
+  require 'data_sources/' . $plugin . '/' . $plugin . '.php';
 
   $request = $app->request();
   $app->response()->header('Content-Type', 'application/rdf+xml;charset=utf-8');
@@ -102,9 +109,15 @@ $app->run();
 /**
  * Pick out the identifier 'namespace'.
  */
-function getIdentifierNamespace($identifier) {
-  $identifier_parts = explode(':', $identifier);
-  return $identifier_parts[0];
+function getDataSourcePlugin($identifier) {
+  global $plugins;
+  list($namespace, $id) = explode(':', $identifier);
+  if (array_key_exists($namespace, $plugins)) {
+    return $plugins[$namespace]['plugin'];
+  }
+  else {
+    return $namespace;
+  }
 }
 
 /**
