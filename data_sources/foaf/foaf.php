@@ -61,7 +61,9 @@ function getWebPage($identifier, $app) {
   list($namespace, $id) = explode(':', $identifier);
   $config = dataSourceConfig($namespace);
   if ($record = getCsvRecord($namespace, $id)) {
-    // Note: the template must be in Slim's 'templates' directory.
+    // The template we want to use is in the same directory
+    // as this script.
+    $app->config('templates.path', dirname(__FILE__));
     $app->render('csvtemplate.html', array('metadata' => $record));
   }
   else {

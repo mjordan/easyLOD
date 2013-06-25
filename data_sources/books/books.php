@@ -68,7 +68,9 @@ function getDataSourceNamespaces() {
 function getWebPage($identifier, $app) {
   list($namespace, $id) = explode(':', $identifier);
   if ($record = getRecord($namespace, $id)) {
-    // Note: the template must be in Slim's 'templates' directory.
+    // The template we want to use is in the same directory
+    // as this script.
+    $app->config('templates.path', dirname(__FILE__));
     $app->render('pdotemplate.html', array('metadata' => $record));
   }
   else {

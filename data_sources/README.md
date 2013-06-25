@@ -8,7 +8,7 @@ A data source plugin is simply a PHP file that interfaces with your data. The fi
 
 `easylod\data_sources\myplugin\myplugin.php`
 
-Any additional files that a plugin uses, such as XSL stylesheets, libraries, etc., should be within its directory as well. Exceptions to this are Slim templates (which need to go in the 'templates' directory in the easyLOD application directory), and any files that contain sensitive information like database usernames and passwords (files containing this type of information should go outside your web server's web root).
+Any additional files that a plugin uses, such as XSL stylesheets, Slim templates, etc., should be within its directory as well. An obvious exceptions to this is any files that contain sensitive information like database usernames and passwords (files containing this type of information should go outside your web server's web root).
 
 # Required functions
 
