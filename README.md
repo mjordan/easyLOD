@@ -33,6 +33,7 @@ Four plugins are provided with easyLOD:
 * a plugin that gets FOAF data (http://xmlns.com/foaf/spec/) from a small CSV file (included in the plugin directory)
 * a plugin that retrieves Dublin Core metadata describing books from a MySQL database (SQL file is included in the plugin directory)
 * a plugin that serves static RDF files transformed from MODS descriptions for items in an Islandora (http://islandora.ca/) repository
+* a plugin that scrapes information from author pages on Simon Fraser University's Summit Institutional Respository (http://summit.sfu.ca) using the PHP Simple HTML DOM Parser (http://simplehtmldom.sourceforge.net/), and exposes that information as RDF containing FOAF, BIO (http://vocab.org/bio/0.1/.html), OWL (http://www.w3.org/TR/owl-ref/), and Dublin Core properties.
 
 These are intended to illustrate how information can be retieved from different data sources. 
 
