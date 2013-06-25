@@ -95,9 +95,11 @@ function getResourceData($identifier, $xml, $app) {
   // Find the record identified by $id and wrap its values
   // in faof: namespaced XML markup.
   if ($record = getCsvRecord($namespace, $id)) {
+    $xml->startElementNS('foaf', 'Person', null);
     foreach ($record as $field => $value) {
       $xml->writeElementNS('foaf', $field, NULL, $value);
     }
+    $xml->endElement(); 
     return $xml;
   }
   else {
