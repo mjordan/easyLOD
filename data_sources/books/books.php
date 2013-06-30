@@ -103,7 +103,7 @@ function getResourceData($identifier, $xml, $app) {
   if ($record = getRecord($namespace, $id)) {
     // Wrap each of the record's values in dc: namespaced XML elements.
     foreach ($record as $field => $value) {
-      $xml->writeElementNS('dc', strtolower($field), NULL, $value);
+      $xml->writeElementNS('dcterms', strtolower($field), NULL, $value);
     }
     return $xml;
   }
