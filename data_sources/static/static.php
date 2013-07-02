@@ -74,12 +74,17 @@ function getWebPage($identifier, $app) {
   // Parse the value of the 'rdf:about' attribute of the top-level
   // modsrdf:ModsResource element. The XML looks like this: 
   // <modsrdf:ModsResource rdf:about="http://www.islandscholar.ca/fedora/repository/ir:6223">.
-  $xml = simplexml_load_file($filePath);
-  $xml->registerXPathNamespace("modsrdf", "http://www.loc.gov/mods/rdf/v1#");
-  $xml->registerXPathNamespace("rdf", "http://www.w3.org/1999/02/22-rdf-syntax-ns#");
-  $modsResource = $xml->xpath('//modsrdf:ModsResource');
-  $url = (string) $modsResource[0]->attributes('rdf', TRUE)->about;
-  $app->redirect($url, 303);
+  if (file_exists($filePath)) {
+    $xml = simplexml_load_file($filePath);
+    $xml->registerXPathNamespace("modsrdf", "http://www.loc.gov/mods/rdf/v1#");
+    $xml->registerXPathNamespace("rdf", "http://www.w3.org/1999/02/22-rdf-syntax-ns#");
+    $modsResource = $xml->xpath('//modsrdf:ModsResource');
+    $url = (string) $modsResource[0]->attributes('rdf', TRUE)->about;
+    $app->redirect($url, 303);
+  }
+  else {
+    $app->halt(404);
+  }
 }
 
 /**
