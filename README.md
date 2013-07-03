@@ -66,7 +66,7 @@ $plugins = array(
 
 All of a plugin's settings must be included in the entries in plugins.php. Each of the top-level entries in the plugins.php file (in this example, 'foo' and 'bar') are independent, and the order in which they appear in the file doesn't matter. $plugins is just an ordinary PHP array.
 
-## Installation and testing easyLOD
+## Installing and testing easyLOD
 
 Unzip the distribution, put it somewhere in your web server's document root, and then use the following command to test the FOAF plugin (this command assumes you are issuing it on the same server where you installed easyLOD):
 
