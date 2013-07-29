@@ -101,7 +101,7 @@ function getWebPage($identifier, $app) {
 function getResourceData($identifier, $xml, $app) {
   list($namespace, $id) = explode(':', $identifier);
   if ($record = getRecord($namespace, $id)) {
-    // Wrap each of the record's values in dc: namespaced XML elements.
+    // Wrap each of the record's values in dcterms: namespaced XML elements.
     foreach ($record as $field => $value) {
       $xml->writeElementNS('dcterms', strtolower($field), NULL, $value);
     }

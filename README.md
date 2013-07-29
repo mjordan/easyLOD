@@ -41,7 +41,7 @@ These are intended to illustrate how information can be retieved from different 
 
 There are two ways to tell easyLOD which namespaces should map to which data source plugins: 1) direct mappings and 2) configured mappings. In a direct mapping, the URI's namespace is identical to the plugin name; in a configured mapping, an entry in a file named 'plugins.php' indicates which namespaces invoke which plugins. Both approaches can work at the same time, although if there is a conflict (that is, there is both a configured mapping for a namespace and there is a plugin file with the same name), the configured mapping wins.
 
-If your the namespaces in your resource URIs map one-to-one to your data source plugins, you do not need a plugins.php file.
+If the namespaces in your resource URIs map one-to-one to your data source plugins, you do not need a plugins.php file.
 
 If you want to use the same plugin for URIs with different namespaces, or you want to use a namespace that is cleaner, shorter, or descriptive of your data than a plugin filename would allow, you need to use a plugins.php file. In other words, configured mappings allow more flexibility in choosing your namespaces. easyLOD ships with an example plugins.php file that illustrates configured mappings. The file contains an associative array $plugins that has members representing namespaces; each of these is also an associative array that defines which data source plugin it to be used and also an optional 'dataSourceConfg' associative array that overrides the plugin's config settings as defined in its dataSourceConfig() function:
 
@@ -99,6 +99,8 @@ Now open a graphical web browser and go to http://localhost/easyLOD/resource/foa
 > page: http://jalfrezitogo.edu
 
 The two different responses to the same URI illustrate the Linked Data concept of content negotiation: browsers that request RDF, which is what Linked Data browsers do, receive your data in RDF, while ordinary web browsers receive your data in a format that is more readable by humans.
+
+A separate tool, viewLOD (https://github.com/mjordan/viewLOD) is available for emulating both human and Linkded Data browsers using a simple web form.
 
 ## No SPARQL endpoint
 
