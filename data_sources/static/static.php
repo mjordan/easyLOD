@@ -5,7 +5,7 @@
  *
  * In this sample plugin, the RDF files were created from MODS documents
  * retrieved from http://www.islandscholar.ca/ and transformed into MODSRDF 
- * using the XSL stylesheet at http://www.loc.gov/standards/mods/modsrdf/modsrdf.xsl.
+ * using the XSL stylesheet at http://www.loc.gov/standards/mods/modsrdf/xsl-files/modsrdf.xsl
  * This transformation was done in a batch offline, not in realtime by this plugin.
  *
  * Distributed under the MIT License, http://opensource.org/licenses/MIT.
