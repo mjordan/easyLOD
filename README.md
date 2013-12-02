@@ -27,7 +27,7 @@ The ID (in the case of the example above, 'foo') can be any string of characters
 
 easyLOD uses plugins to retrieve data, which it then wraps in RDF/XML to send to the Linked Data browser. If the browser making the request is not a Linked Data browser (i.e., probably a human using Chrome, Firefox, etc.), the data is wrapped in HTML and sent to the browser. Plugins can also redirect users to external websites that describe the item corresponding to the identifier.
 
-Four plugins are provided with easyLOD: 
+Five plugins are provided with easyLOD: 
 
 * a plugin that retrieves Dublin Core metadata from CONTENTdm (http://contentdm.org/), which provides a web-services API
 * a plugin that gets FOAF data (http://xmlns.com/foaf/spec/) from a small CSV file (included in the plugin directory)
